@@ -13,18 +13,18 @@ db = client["invest-tracker"]
 collection = db["users"]
 
 # Insert a document random just for testing
-document = {"name": "John", "age": 30, "city": "New York"}
+document = {"category": "Stocks", "amount": 500, "notes": "TSLA"}
 collection.insert_one(document)
 
 # Find a document
-result = collection.find_one({"name": "John"})
+result = collection.find_one({"category": "Stocks"})
 print(result)
 
 # Update a document
-collection.update_one({"name": "John"}, {"$set": {"age": 31}})
+collection.update_one({"category": "Stocks"}, {"$set": {"amount": 1000}})
 
 # Delete a document
-collection.delete_one({"name": "John"})
+collection.delete_one({"category": "Stocks"})
 
 # Close the connection
 client.close()
