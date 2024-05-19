@@ -1,2 +1,3 @@
-# track-investments
-Bot to analyze user investment data with LLM's
+## First Phase
+
+Parse the user input into (category, amount)
