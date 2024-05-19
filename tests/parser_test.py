@@ -1,4 +1,8 @@
-import parsers as p
+import os, sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from phase1 import parser as p
+
 
 def test_extraction():
     test_cases = [
