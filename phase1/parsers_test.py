@@ -1,4 +1,4 @@
-from phase1 import parser
+import parsers as p
 
 def test_extraction():
     test_cases = [
@@ -10,5 +10,8 @@ def test_extraction():
     ]
     
     for i, user_input in enumerate(test_cases):
-        result = parser.extract_investment_info(user_input)
+        result = p.extract_investment_info(user_input)
         print(f"Test Case {i+1}: {user_input}\nParsed Output: {result}\n")
+
+if __name__ == "__main__":
+    test_extraction()
