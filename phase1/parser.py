@@ -38,7 +38,6 @@ def extract_amount(text):
     return amounts
 
 def extract_investment_info(username, user_input):
-
     doc = nlp(user_input)
 
     # Extract entities
