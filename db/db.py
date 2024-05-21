@@ -1,42 +1,49 @@
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
+import firebase_admin
+from firebase_admin import credentials, auth, db
 
-uri = "mongodb+srv://apptestingphone1:mnd0qljGSUZ4OCKw@investtracker.suvl2bt.mongodb.net/?retryWrites=true&w=majority&appName=investtracker"
+# Initialize the Firebase Admin SDK
+cred = credentials.Certificate('path/to/serviceAccountKey.json')
+firebase_admin.initialize_app(cred, {
+    'databaseURL': 'https://your-database-name.firebaseio.com'
+})
 
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
+def create_user(email, password):
+    try:
+        user = auth.create_user(
+            email=email,
+            password=password
+        )
+        print('Successfully created new user:', user.uid)
+        return user.uid
+    except auth.AuthError as e:
+        print('Error creating new user:', e)
+        return None
 
-# Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e)
+def add_investment_to_user(uid, investment):
+    ref = db.reference(f'/users/{uid}/investments')
+    ref.push(investment)
+    print(f'Added investment for user {uid}: {investment}')
 
-# Access the database
-db = client.investtracker
+def get_user_investments(uid):
+    ref = db.reference(f'/users/{uid}/investments')
+    investments = ref.get()
+    print(f'Investments for user {uid}: {investments}')
+    return investments
 
-# Create a new user document
-user = {
-    "username": "johndoe",
-    "email": "johndoe@example.com",
-    "investments": [
-        {"type": "stock", "amount": 50, "notes": "tesla"},
-        {"type": "crypto", "amount": 50, "notes": "btc"}
-    ]
-}
+if __name__ == "__main__":
+    email = input("Enter email: ")
+    password = input("Enter password: ")
 
-# Insert the user into the 'users' collection
-users_collection = db.users
-try:
-    result = users_collection.insert_one(user)
-    print(f"User inserted with _id: {result.inserted_id}")
-except Exception as e:
-    print(e)
+    uid = create_user(email, password)
 
-# Retrieve and display the user to confirm the insertion
-try:
-    inserted_user = users_collection.find_one({"_id": result.inserted_id})
-    print(f"Inserted user: {inserted_user}")
-except Exception as e:
-    print(e)
+    if uid:
+        # Example investments
+        investments = [
+            {"name": "Stock A", "amount": 1000},
+            {"name": "Stock B", "amount": 2000}
+        ]
+
+        for investment in investments:
+            add_investment_to_user(uid, investment)
+        
+        get_user_investments(uid)
