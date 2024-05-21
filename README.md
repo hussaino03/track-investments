@@ -17,3 +17,7 @@
 ✅ Add more metrics to the report
 
 Connect the DB to use the investment data from the user fields 
+
+## Third Phase 
+
+Create a UI to display the investments 
