@@ -2,9 +2,9 @@ import firebase_admin
 from firebase_admin import credentials, auth, db
 
 # Initialize the Firebase Admin SDK
-cred = credentials.Certificate('path/to/serviceAccountKey.json')
+cred = credentials.Certificate('investmentstrack-firebase-adminsdk-s3nhe-31d8455c83.json')
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://your-database-name.firebaseio.com'
+    'databaseURL': 'https://investmentstrack-default-rtdb.firebaseio.com/'
 })
 
 def create_user(email, password):
