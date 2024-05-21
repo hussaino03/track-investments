@@ -2,8 +2,35 @@ import json
 import datetime
 from parser import parser as p
 from api import stocks as api
+from firebase_admin import credentials, auth, db
+from db.db import create_user, add_investment_to_user, get_user_investments, save_report_to_db, get_report_from_db
 
 def main():
+    is_returning_user = input("Are you a returning user? (y/n): ").lower()
+    if is_returning_user == 'y':
+        email = input("Enter email: ")
+        try:
+            user = auth.get_user_by_email(email)
+            uid = user.uid
+            report = get_report_from_db(uid)
+            if report:
+                print("User Investment Report:")
+                print(json.dumps(report, indent=4))
+            else:
+                print("No report found for this user.")
+        except auth.UserNotFoundError:
+            print("No user found with this email. Please register as a new user.")
+            return
+    else:
+        email = input("Enter email: ")
+        password = input("Enter password: ")
+
+        uid = create_user(email, password)
+
+        if not uid:
+            print("Could not create user. Exiting.")
+            return
+
     username = input("What's your name? ")
     investment_data = []
 
@@ -15,13 +42,10 @@ def main():
         if user_input.lower() in ["exit", "quit"]:
             break
 
-        # Call the function and store its return value
         investment_info = p.extract_investment_info(username, user_input)
 
-        # Append the returned information to the investment_data list
         investment_data.append(investment_info)
 
-        # Print the processed investment data
         print(f"\nInvestment {len(investment_data)}:")
         print(f"  Entities: {investment_info['entities']}")
         print(f"  Amount: {investment_info['amount']}")
@@ -64,18 +88,16 @@ def main():
                 else:
                     print(f"Could not find stock symbol for {entity[0]}")
 
-    # Convert the user report to JSON
     user_report_json = json.dumps(user_report, indent=4)
 
-    # Define the file name
     file_name = f"{username}_investment_report.json"
 
-    # Save the JSON report to a file
     with open(file_name, "w") as file:
         file.write(user_report_json)
 
     print(f"\nUser Investment Report has been saved to {file_name}")
 
-# Call the main function
+    save_report_to_db(uid, user_report)
+
 if __name__ == "__main__":
     main()
