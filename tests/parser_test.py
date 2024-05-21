@@ -1,7 +1,7 @@
 import os, sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from phase1 import parser
+from parser import parser
 import unittest
 
 class TestParser(unittest.TestCase):
