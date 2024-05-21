@@ -43,7 +43,7 @@ def main():
                             investment_entry = {
                                 "type": "stock",  # assuming all are stocks for simplicity
                                 "amount": {"$numberInt": str(int(amount))},
-                                "notes": entity[0],
+                                "ticker": entity[0],
                                 "current_price": current_price,
                                 "number_of_shares": number_of_shares
                             }
