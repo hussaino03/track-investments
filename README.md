@@ -14,4 +14,6 @@
 
 ✅ Integrate a real-time stocks api to get the current prices and calculate user shares as a metric into the report
 
+✅ Add more metrics to the report
+
 Connect the DB to use the investment data from the user fields 
