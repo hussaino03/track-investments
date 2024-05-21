@@ -1,8 +1,9 @@
 import firebase_admin
 from firebase_admin import credentials, auth, db
+import json
 
 # Initialize the Firebase Admin SDK
-cred = credentials.Certificate('investmentstrack-firebase-adminsdk-s3nhe-31d8455c83.json')
+cred = credentials.Certificate('db/investmentstrack-firebase-adminsdk-s3nhe-31d8455c83.json')
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://investmentstrack-default-rtdb.firebaseio.com/'
 })
@@ -30,20 +31,12 @@ def get_user_investments(uid):
     print(f'Investments for user {uid}: {investments}')
     return investments
 
-if __name__ == "__main__":
-    email = input("Enter email: ")
-    password = input("Enter password: ")
+def save_report_to_db(uid, report):
+    ref = db.reference(f'/users/{uid}/report')
+    ref.set(report)
+    print(f'Saved report for user {uid}')
 
-    uid = create_user(email, password)
-
-    if uid:
-        # Example investments
-        investments = [
-            {"name": "Stock A", "amount": 1000},
-            {"name": "Stock B", "amount": 2000}
-        ]
-
-        for investment in investments:
-            add_investment_to_user(uid, investment)
-        
-        get_user_investments(uid)
+def get_report_from_db(uid):
+    ref = db.reference(f'/users/{uid}/report')
+    report = ref.get()
+    return report
