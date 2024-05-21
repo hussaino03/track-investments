@@ -1,23 +1,29 @@
 {
-    "username": "Hussain",
+    "username": "hussain",
     "investments": [
         {
             "type": "stock",
             "amount": {
                 "$numberInt": "500"
             },
-            "notes": "Apple",
+            "ticker": "Apple",
+            "investment_date": "2024-05-21",
             "current_price": 14.79,
-            "number_of_shares": 33.80662609871535
+            "number_of_shares": 33.80662609871535,
+            "total_value": 500.0,
+            "market_cap": "3.54 billion"
         },
         {
             "type": "stock",
             "amount": {
-                "$numberInt": "800"
+                "$numberInt": "700"
             },
-            "notes": "Amazon",
+            "ticker": "Amazon",
+            "investment_date": "2024-05-21",
             "current_price": 183.45,
-            "number_of_shares": 4.360861270100846
+            "number_of_shares": 3.8157536113382395,
+            "total_value": 700.0,
+            "market_cap": "N/A"
         }
     ]
 }
