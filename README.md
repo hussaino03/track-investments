@@ -16,7 +16,9 @@
 
 ✅ Add more metrics to the report.
 
-Connect the DB to use the investment data from the user fields.
+✅ Connect the DB to use the investment data from the user fields.
+
+✅ Add a returning user option to fetch the user report from the database and allow them to modify it if needed.
 
 ## Third Phase 
 
