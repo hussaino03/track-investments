@@ -1,0 +1,23 @@
+{
+    "username": "Hussain",
+    "investments": [
+        {
+            "type": "stock",
+            "amount": {
+                "$numberInt": "500"
+            },
+            "notes": "Apple",
+            "current_price": 14.79,
+            "number_of_shares": 33.80662609871535
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "$numberInt": "800"
+            },
+            "notes": "Amazon",
+            "current_price": 183.45,
+            "number_of_shares": 4.360861270100846
+        }
+    ]
+}
