@@ -1,4 +1,5 @@
 import json
+import datetime
 from parser import parser as p
 from api import stocks as api
 
@@ -38,14 +39,24 @@ def main():
                 if symbol:
                     for amount in investment["amount"]:
                         current_price = api.get_stock_price(symbol)
+                        market_cap = api.get_market_cap(symbol)
                         if current_price:
                             number_of_shares = amount / current_price
+                            total_value = current_price * number_of_shares
+                            gain_loss = total_value - amount
+                            percentage_change = (gain_loss / amount) * 100
+                            formatted_market_cap = api.format_market_cap(market_cap) if market_cap else "N/A"
+                            investment_date = datetime.datetime.now().strftime('%Y-%m-%d')
+
                             investment_entry = {
                                 "type": "stock",  # assuming all are stocks for simplicity
                                 "amount": {"$numberInt": str(int(amount))},
                                 "ticker": entity[0],
+                                "investment_date": investment_date,
                                 "current_price": current_price,
-                                "number_of_shares": number_of_shares
+                                "number_of_shares": number_of_shares,
+                                "total_value": total_value,
+                                "market_cap": formatted_market_cap
                             }
                             user_report["investments"].append(investment_entry)
                         else:
