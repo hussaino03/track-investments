@@ -73,8 +73,8 @@ def main():
                             investment_date = datetime.datetime.now().strftime('%Y-%m-%d')
 
                             investment_entry = {
-                                "type": "stock",  # assuming all are stocks for simplicity
-                                "amount": {"$numberInt": str(int(amount))},
+                                "type": "stock",  # assuming all are stocks for now
+                                "amount": {"int": str(int(amount))},
                                 "ticker": entity[0],
                                 "investment_date": investment_date,
                                 "current_price": current_price,
@@ -97,6 +97,7 @@ def main():
 
     print(f"\nUser Investment Report has been saved to {file_name}")
 
+    print(user_report)
     save_report_to_db(uid, user_report)
 
 if __name__ == "__main__":
