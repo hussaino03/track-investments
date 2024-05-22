@@ -79,7 +79,8 @@ def main():
                             investment_entry = {
                                 "type": "stock",  # assuming all are stocks for now
                                 "amount": {"int": str(int(amount))},
-                                "ticker": entity[0],
+                                "name": entity[0],
+                                "ticker": symbol,
                                 "investment_date": investment_date,
                                 "initial_price": initial_price,
                                 "current_price": current_price,
