@@ -1,17 +1,39 @@
 {
-    "username": "Hussain",
+    "username": "hussain",
     "investments": [
         {
             "type": "stock",
             "amount": {
-                "number": "700"
+                "int": "500"
             },
-            "ticker": "Apple",
+            "name": "Philips",
+            "ticker": "PHG",
             "investment_date": "2024-05-22",
-            "current_price": 14.65,
-            "number_of_shares": 47.781569965870304,
-            "total_value": 700.0,
-            "market_cap": "3.59 billion"
+            "initial_price": 26.0,
+            "current_price": 27.170000076293945,
+            "number_of_shares": 18.402649929922312,
+            "initial_value": 478.4688981779801,
+            "total_value": 500.0,
+            "gain_loss": 21.53,
+            "percentage_change": 4.31,
+            "market_cap": "25.75 billion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "300"
+            },
+            "name": "amazon",
+            "ticker": "AMZN",
+            "investment_date": "2024-05-22",
+            "initial_price": 188.0,
+            "current_price": 182.5800018310547,
+            "number_of_shares": 1.6431153302188957,
+            "initial_value": 308.9056820811524,
+            "total_value": 300.0,
+            "gain_loss": -8.91,
+            "percentage_change": -2.97,
+            "market_cap": "1.90 trillion"
         }
     ]
 }
