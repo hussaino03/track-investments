@@ -6,64 +6,85 @@
             "amount": {
                 "int": "500"
             },
-            "ticker": "Amazon",
+            "name": "Apple",
+            "ticker": "AAPL",
+            "investment_date": "2024-05-22",
+            "initial_price": 182.4924774169922,
+            "current_price": 191.47000122070312,
+            "number_of_shares": 2.611375133505438,
+            "initial_value": 476.5563175785361,
+            "total_value": 500.0,
+            "gain_loss": 23.44,
+            "percentage_change": 4.69,
+            "market_cap": "2.94 trillion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "300"
+            },
+            "name": "Amazon",
+            "ticker": "AMZN",
             "investment_date": "2024-05-22",
             "initial_price": 188.0,
-            "current_price": 183.04930114746094,
-            "number_of_shares": 2.731504555689124,
-            "initial_value": 513.5228564695553,
-            "total_value": 500.0,
-            "gain_loss": -13.52,
-            "percentage_change": -2.7,
-            "market_cap": "1.90 trillion"
+            "current_price": 183.29840087890625,
+            "number_of_shares": 1.636675489592466,
+            "initial_value": 307.6949920433836,
+            "total_value": 300.0,
+            "gain_loss": -7.69,
+            "percentage_change": -2.56,
+            "market_cap": "1.91 trillion"
         },
         {
             "type": "stock",
             "amount": {
-                "int": "400"
+                "int": "566"
             },
-            "ticker": "Coinbase",
+            "name": "Coinbase",
+            "ticker": "COIN",
             "investment_date": "2024-05-22",
             "initial_price": 211.1999969482422,
-            "current_price": 234.5299072265625,
-            "number_of_shares": 1.7055394117117384,
-            "initial_value": 360.2099185486259,
-            "total_value": 400.0,
-            "gain_loss": 39.79,
-            "percentage_change": 9.95,
-            "market_cap": "57.59 billion"
+            "current_price": 234.8699951171875,
+            "number_of_shares": 2.4098437934466532,
+            "initial_value": 508.95900182167355,
+            "total_value": 566.0,
+            "gain_loss": 57.04,
+            "percentage_change": 10.08,
+            "market_cap": "57.68 billion"
         },
         {
             "type": "stock",
             "amount": {
-                "int": "456"
+                "int": "455"
             },
-            "ticker": "Tesla",
-            "investment_date": "2024-05-22",
-            "initial_price": 174.72000122070312,
-            "current_price": 179.7050018310547,
-            "number_of_shares": 2.5374919749239777,
-            "initial_value": 443.35060095624175,
-            "total_value": 456.0,
-            "gain_loss": 12.65,
-            "percentage_change": 2.77,
-            "market_cap": "573.07 billion"
-        },
-        {
-            "type": "stock",
-            "amount": {
-                "int": "2333"
-            },
-            "ticker": "Datadog",
+            "name": "Datadog",
+            "ticker": "DDOG",
             "investment_date": "2024-05-22",
             "initial_price": 117.27999877929688,
-            "current_price": 121.61000061035156,
-            "number_of_shares": 19.184277512464817,
-            "initial_value": 2249.932043243566,
-            "total_value": 2333.0,
-            "gain_loss": 83.07,
-            "percentage_change": 3.56,
-            "market_cap": "40.68 billion"
+            "current_price": 121.87999725341797,
+            "number_of_shares": 3.733180261351213,
+            "initial_value": 437.82737649416543,
+            "total_value": 455.0,
+            "gain_loss": 17.17,
+            "percentage_change": 3.77,
+            "market_cap": "40.77 billion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "666"
+            },
+            "name": "Cisco",
+            "ticker": "CSCO",
+            "investment_date": "2024-05-22",
+            "initial_price": 48.0,
+            "current_price": 47.747501373291016,
+            "number_of_shares": 13.94837385925595,
+            "initial_value": 669.5219452442856,
+            "total_value": 666.0,
+            "gain_loss": -3.52,
+            "percentage_change": -0.53,
+            "market_cap": "193.34 billion"
         }
     ]
 }
