@@ -39,7 +39,7 @@ Investment recommendations based on the user's portfolio and current market tren
 
 Schedule automated generation of investments report (updates on the current market, losses/gains from current investments) and send via email.
 
-Create data visualizations (graphs, charts) for investment performance over time.
+✅ Create data visualizations (graphs, charts) for investment performance over time.
 
 Milestones:
 
