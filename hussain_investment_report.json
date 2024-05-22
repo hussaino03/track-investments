@@ -6,34 +6,86 @@
             "amount": {
                 "int": "500"
             },
-            "name": "Philips",
-            "ticker": "PHG",
+            "name": "Apple",
+            "ticker": "AAPL",
             "investment_date": "2024-05-22",
-            "initial_price": 26.0,
-            "current_price": 27.170000076293945,
-            "number_of_shares": 18.402649929922312,
-            "initial_value": 478.4688981779801,
-            "total_value": 500.0,
-            "gain_loss": 21.53,
-            "percentage_change": 4.31,
-            "market_cap": "25.75 billion"
+            "initial_price": 182.4924774169922,
+            "current_price": 190.89999389648438,
+            "number_of_shares": 2.619172425281089,
+            "initial_value": 477.97926467181776,
+            "total_value": 500.00000000000006,
+            "gain_loss": 22.02,
+            "percentage_change": 4.4,
+            "market_cap": "2.93 trillion"
         },
         {
             "type": "stock",
             "amount": {
                 "int": "300"
             },
-            "name": "amazon",
+            "name": "coinbase",
+            "ticker": "COIN",
+            "investment_date": "2024-05-22",
+            "initial_price": 211.1999969482422,
+            "current_price": 231.50999450683594,
+            "number_of_shares": 1.2958403832156875,
+            "initial_value": 273.6814849805622,
+            "total_value": 300.0,
+            "gain_loss": 26.32,
+            "percentage_change": 8.77,
+            "market_cap": "56.85 billion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "343"
+            },
+            "name": "Amazon",
             "ticker": "AMZN",
             "investment_date": "2024-05-22",
             "initial_price": 188.0,
-            "current_price": 182.5800018310547,
-            "number_of_shares": 1.6431153302188957,
-            "initial_value": 308.9056820811524,
-            "total_value": 300.0,
-            "gain_loss": -8.91,
-            "percentage_change": -2.97,
-            "market_cap": "1.90 trillion"
+            "current_price": 183.1300048828125,
+            "number_of_shares": 1.8729863531620097,
+            "initial_value": 352.1214343944578,
+            "total_value": 343.0,
+            "gain_loss": -9.12,
+            "percentage_change": -2.66,
+            "market_cap": "1.91 trillion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "1000"
+            },
+            "name": "Google",
+            "ticker": "GOOG",
+            "investment_date": "2024-05-22",
+            "initial_price": 171.16000366210938,
+            "current_price": 178.0,
+            "number_of_shares": 5.617977528089888,
+            "initial_value": 961.5730542815135,
+            "total_value": 1000.0000000000001,
+            "gain_loss": 38.43,
+            "percentage_change": 3.84,
+            "market_cap": "2.19 trillion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "579"
+            },
+            "name": "Tesla",
+            "ticker": "TSLA",
+            "investment_date": "2024-05-22",
+            "initial_price": 174.72000122070312,
+            "current_price": 180.11000061035156,
+            "number_of_shares": 3.2147021155843736,
+            "initial_value": 561.6727575590986,
+            "total_value": 579.0,
+            "gain_loss": 17.33,
+            "percentage_change": 2.99,
+            "market_cap": "574.41 billion"
         }
-    ]
+    ],
+    "investments_distribution": "graph/investment_distribution.png"
 }
