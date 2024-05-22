@@ -40,6 +40,34 @@ def train_model():
             ("Google is my favorite company", {"entities": [(0, 6, "ORG")]}),
         ]
 
+        TRAIN_DATA.extend([
+            ("Microsoft just released a new product", {"entities": [(0, 9, "ORG")]}),
+            ("Investors are optimistic about Alphabet's future", {"entities": [(32, 40, "ORG")]}),
+            ("We're hiring at Facebook", {"entities": [(17, 25, "ORG")]}),
+            ("Tesla's stock price has been soaring", {"entities": [(0, 5, "ORG")]}),
+            ("Apple unveiled its latest iPhone model", {"entities": [(0, 5, "ORG")]}),
+            ("Amazon is expanding its services", {"entities": [(0, 6, "ORG")]}),
+            ("Google announced a new partnership", {"entities": [(0, 6, "ORG")]}),
+            ("Intel is facing supply chain issues", {"entities": [(0, 5, "ORG")]}),
+            ("IBM is investing in quantum computing", {"entities": [(0, 3, "ORG")]}),
+            ("Netflix's latest series has received critical acclaim", {"entities": [(0, 7, "ORG")]}),
+            ("Oracle acquired a promising startup", {"entities": [(0, 6, "ORG")]}),
+            ("Twitter's CEO announced major changes", {"entities": [(0, 7, "ORG")]}),
+            ("Uber is expanding into new markets", {"entities": [(0, 4, "ORG")]}),
+            ("Walmart's online sales are booming", {"entities": [(0, 7, "ORG")]}),
+            ("Zoom's video conferencing software is widely used", {"entities": [(0, 4, "ORG")]}),
+            ("Salesforce introduced new features", {"entities": [(0, 10, "ORG")]}),
+            ("Snapchat's user base continues to grow", {"entities": [(0, 9, "ORG")]}),
+            ("Adobe announced record quarterly earnings", {"entities": [(0, 5, "ORG")]}),
+            ("Nvidia is a leader in graphics processing", {"entities": [(0, 6, "ORG")]}),
+            ("PayPal's payment platform is secure", {"entities": [(0, 6, "ORG")]}),
+            ("Sony unveiled its latest gaming console", {"entities": [(0, 4, "ORG")]}),
+            ("Square's stock price surged after earnings report", {"entities": [(0, 6, "ORG")]}),
+            ("Reddit's community is discussing new trends", {"entities": [(0, 6, "ORG")]}),
+            ("LinkedIn is a popular platform for professionals", {"entities": [(0, 8, "ORG")]}),
+        ])
+
+
         # Add NER pipeline if it's not already present
         if "ner" not in nlp.pipe_names:
             ner = nlp.add_pipe("ner", last=True)

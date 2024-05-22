@@ -6,85 +6,34 @@
             "amount": {
                 "int": "500"
             },
-            "name": "Apple",
-            "ticker": "AAPL",
+            "name": "Philips",
+            "ticker": "PHG",
             "investment_date": "2024-05-22",
-            "initial_price": 182.4924774169922,
-            "current_price": 191.47000122070312,
-            "number_of_shares": 2.611375133505438,
-            "initial_value": 476.5563175785361,
+            "initial_price": 26.0,
+            "current_price": 27.170000076293945,
+            "number_of_shares": 18.402649929922312,
+            "initial_value": 478.4688981779801,
             "total_value": 500.0,
-            "gain_loss": 23.44,
-            "percentage_change": 4.69,
-            "market_cap": "2.94 trillion"
+            "gain_loss": 21.53,
+            "percentage_change": 4.31,
+            "market_cap": "25.75 billion"
         },
         {
             "type": "stock",
             "amount": {
                 "int": "300"
             },
-            "name": "Amazon",
+            "name": "amazon",
             "ticker": "AMZN",
             "investment_date": "2024-05-22",
             "initial_price": 188.0,
-            "current_price": 183.29840087890625,
-            "number_of_shares": 1.636675489592466,
-            "initial_value": 307.6949920433836,
+            "current_price": 182.5800018310547,
+            "number_of_shares": 1.6431153302188957,
+            "initial_value": 308.9056820811524,
             "total_value": 300.0,
-            "gain_loss": -7.69,
-            "percentage_change": -2.56,
-            "market_cap": "1.91 trillion"
-        },
-        {
-            "type": "stock",
-            "amount": {
-                "int": "566"
-            },
-            "name": "Coinbase",
-            "ticker": "COIN",
-            "investment_date": "2024-05-22",
-            "initial_price": 211.1999969482422,
-            "current_price": 234.8699951171875,
-            "number_of_shares": 2.4098437934466532,
-            "initial_value": 508.95900182167355,
-            "total_value": 566.0,
-            "gain_loss": 57.04,
-            "percentage_change": 10.08,
-            "market_cap": "57.68 billion"
-        },
-        {
-            "type": "stock",
-            "amount": {
-                "int": "455"
-            },
-            "name": "Datadog",
-            "ticker": "DDOG",
-            "investment_date": "2024-05-22",
-            "initial_price": 117.27999877929688,
-            "current_price": 121.87999725341797,
-            "number_of_shares": 3.733180261351213,
-            "initial_value": 437.82737649416543,
-            "total_value": 455.0,
-            "gain_loss": 17.17,
-            "percentage_change": 3.77,
-            "market_cap": "40.77 billion"
-        },
-        {
-            "type": "stock",
-            "amount": {
-                "int": "666"
-            },
-            "name": "Cisco",
-            "ticker": "CSCO",
-            "investment_date": "2024-05-22",
-            "initial_price": 48.0,
-            "current_price": 47.747501373291016,
-            "number_of_shares": 13.94837385925595,
-            "initial_value": 669.5219452442856,
-            "total_value": 666.0,
-            "gain_loss": -3.52,
-            "percentage_change": -0.53,
-            "market_cap": "193.34 billion"
+            "gain_loss": -8.91,
+            "percentage_change": -2.97,
+            "market_cap": "1.90 trillion"
         }
     ]
 }
