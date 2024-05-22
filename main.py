@@ -6,6 +6,7 @@ from firebase_admin import credentials, auth, db
 from db.db import create_user, add_investment_to_user, get_user_investments, save_report_to_db, get_report_from_db
 
 def main():
+    username = input("What's your name? ")
     is_returning_user = input("Are you a returning user? (y/n): ").lower()
     if is_returning_user == 'y':
         email = input("Enter email: ")
@@ -31,7 +32,6 @@ def main():
             print("Could not create user. Exiting.")
             return
 
-    username = input("What's your name? ")
     investment_data = []
 
     print(f"Hello {username}, let's add your investment details. You can type 'exit' or 'quit' to finish at any time.")
