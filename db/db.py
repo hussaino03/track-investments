@@ -1,9 +1,13 @@
 import firebase_admin
-from firebase_admin import credentials, auth, db
-import json
+from firebase_admin import credentials, auth, db, exceptions
+import json, os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+json_file_path = os.path.join(current_dir, 'investmentstrack-firebase-adminsdk-s3nhe-31d8455c83.json')
 
 # Initialize the Firebase Admin SDK
-cred = credentials.Certificate('db/investmentstrack-firebase-adminsdk-s3nhe-31d8455c83.json')
+cred = credentials.Certificate(json_file_path)
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://investmentstrack-default-rtdb.firebaseio.com/'
 })
@@ -16,7 +20,7 @@ def create_user(email, password):
         )
         print('Successfully created new user:', user.uid)
         return user.uid
-    except auth.AuthError as e:
+    except exceptions.FirebaseError as e:
         print('Error creating new user:', e)
         return None
 
