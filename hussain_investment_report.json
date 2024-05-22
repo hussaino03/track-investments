@@ -1,17 +1,69 @@
 {
-    "username": "Hussain",
+    "username": "hussain",
     "investments": [
         {
             "type": "stock",
             "amount": {
-                "number": "700"
+                "int": "500"
             },
-            "ticker": "Apple",
+            "ticker": "Amazon",
             "investment_date": "2024-05-22",
-            "current_price": 14.65,
-            "number_of_shares": 47.781569965870304,
-            "total_value": 700.0,
-            "market_cap": "3.59 billion"
+            "initial_price": 188.0,
+            "current_price": 183.04930114746094,
+            "number_of_shares": 2.731504555689124,
+            "initial_value": 513.5228564695553,
+            "total_value": 500.0,
+            "gain_loss": -13.52,
+            "percentage_change": -2.7,
+            "market_cap": "1.90 trillion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "400"
+            },
+            "ticker": "Coinbase",
+            "investment_date": "2024-05-22",
+            "initial_price": 211.1999969482422,
+            "current_price": 234.5299072265625,
+            "number_of_shares": 1.7055394117117384,
+            "initial_value": 360.2099185486259,
+            "total_value": 400.0,
+            "gain_loss": 39.79,
+            "percentage_change": 9.95,
+            "market_cap": "57.59 billion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "456"
+            },
+            "ticker": "Tesla",
+            "investment_date": "2024-05-22",
+            "initial_price": 174.72000122070312,
+            "current_price": 179.7050018310547,
+            "number_of_shares": 2.5374919749239777,
+            "initial_value": 443.35060095624175,
+            "total_value": 456.0,
+            "gain_loss": 12.65,
+            "percentage_change": 2.77,
+            "market_cap": "573.07 billion"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "2333"
+            },
+            "ticker": "Datadog",
+            "investment_date": "2024-05-22",
+            "initial_price": 117.27999877929688,
+            "current_price": 121.61000061035156,
+            "number_of_shares": 19.184277512464817,
+            "initial_value": 2249.932043243566,
+            "total_value": 2333.0,
+            "gain_loss": 83.07,
+            "percentage_change": 3.56,
+            "market_cap": "40.68 billion"
         }
     ]
 }

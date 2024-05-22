@@ -35,6 +35,9 @@ def main():
     investment_data = []
 
     print(f"Hello {username}, let's add your investment details. You can type 'exit' or 'quit' to finish at any time.")
+    investment_date = datetime.datetime.now().strftime('%Y-%m-%d')
+
+    two_weeks_ago = (datetime.datetime.now() - datetime.timedelta(weeks=2)).strftime('%Y-%m-%d')
 
     while True:
         user_input = input("\nWhat did you invest in today? ")
@@ -59,27 +62,32 @@ def main():
     for investment in investment_data:
         for entity in investment["entities"]:
             if entity[1] == "ORG":
-                symbol = api.get_stock_symbol(entity[0])
+                symbol = api.get_ticker(entity[0])
                 if symbol:
                     for amount in investment["amount"]:
+                        initial_price = api.get_initial_stock_price(symbol, two_weeks_ago, investment_date)
                         current_price = api.get_stock_price(symbol)
                         market_cap = api.get_market_cap(symbol)
                         if current_price:
                             number_of_shares = amount / current_price
                             total_value = current_price * number_of_shares
-                            gain_loss = total_value - amount
-                            percentage_change = (gain_loss / amount) * 100
+                            initial_value = initial_price * number_of_shares
+                            gain_loss = round((total_value - initial_value), 2)
+                            percentage_change = round(((gain_loss / amount) * 100), 2)
                             formatted_market_cap = api.format_market_cap(market_cap) if market_cap else "N/A"
-                            investment_date = datetime.datetime.now().strftime('%Y-%m-%d')
 
                             investment_entry = {
                                 "type": "stock",  # assuming all are stocks for now
                                 "amount": {"int": str(int(amount))},
                                 "ticker": entity[0],
                                 "investment_date": investment_date,
+                                "initial_price": initial_price,
                                 "current_price": current_price,
                                 "number_of_shares": number_of_shares,
+                                "initial_value": initial_value,
                                 "total_value": total_value,
+                                "gain_loss": gain_loss,
+                                "percentage_change": percentage_change,
                                 "market_cap": formatted_market_cap
                             }
                             user_report["investments"].append(investment_entry)
