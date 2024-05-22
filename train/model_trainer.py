@@ -65,6 +65,13 @@ def train_model():
             ("Square's stock price surged after earnings report", {"entities": [(0, 6, "ORG")]}),
             ("Reddit's community is discussing new trends", {"entities": [(0, 6, "ORG")]}),
             ("LinkedIn is a popular platform for professionals", {"entities": [(0, 8, "ORG")]}),
+            ("bought 500 Apple shares", {"entities": [(7, 12, "ORG"), (0, 3, "MONEY")]}),
+            ("just purchased 1000 Google shares", {"entities": [(17, 23, "ORG"), (0, 4, "MONEY")]}),
+            ("acquired 200 Amazon shares", {"entities": [(10, 16, "ORG"), (0, 3, "MONEY")]}),
+            ("grabbed 300 Tesla shares", {"entities": [(8, 13, "ORG"), (0, 3, "MONEY")]}),
+            ("picked up 400 Microsoft shares", {"entities": [(10, 19, "ORG"), (0, 3, "MONEY")]}),
+            ("got 250 Netflix shares", {"entities": [(5, 11, "ORG"), (0, 3, "MONEY")]}),
+            ("bought 500 apple shares", {"entities": [(7, 12, "ORG"), (0, 3, "MONEY")]}),
         ])
 
 
