@@ -1,0 +1,141 @@
+{
+    "username": "sampleuser",
+    "investments": [
+        {
+            "amount": {
+                "int": "256"
+            },
+            "current_price": 175.05999755859375,
+            "gain_loss": 5.09,
+            "initial_price": 171.5800018310547,
+            "initial_value": 250.9110081190775,
+            "investment_date": "2024-05-23",
+            "market_cap": "2.15 trillion",
+            "name": "Google",
+            "number_of_shares": 1.4623557841323236,
+            "percentage_change": 1.99,
+            "ticker": "GOOG",
+            "total_value": 256.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "190"
+            },
+            "current_price": 186.8800048828125,
+            "gain_loss": 2.6,
+            "initial_price": 184.32000732421875,
+            "initial_value": 187.39726282414313,
+            "investment_date": "2024-05-23",
+            "market_cap": "2.87 trillion",
+            "name": "Apple",
+            "number_of_shares": 1.016695178915176,
+            "percentage_change": 1.37,
+            "ticker": "AAPL",
+            "total_value": 190.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "456"
+            },
+            "current_price": 218.86000061035156,
+            "gain_loss": 17.52,
+            "initial_price": 210.4499969482422,
+            "initial_value": 438.47755798580357,
+            "investment_date": "2024-05-23",
+            "market_cap": "53.75 billion",
+            "name": "Coinbase",
+            "number_of_shares": 2.0835237079791558,
+            "percentage_change": 3.84,
+            "ticker": "COIN",
+            "total_value": 456.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "333"
+            },
+            "current_price": 181.0500030517578,
+            "gain_loss": -15.54,
+            "initial_price": 189.5,
+            "initial_value": 348.5418333959389,
+            "investment_date": "2024-05-23",
+            "market_cap": "1.88 trillion",
+            "name": "Amazon",
+            "number_of_shares": 1.839270888632923,
+            "percentage_change": -4.67,
+            "ticker": "AMZN",
+            "total_value": 333.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "456"
+            },
+            "current_price": 173.74000549316406,
+            "gain_loss": 4.65,
+            "initial_price": 171.97000122070312,
+            "initial_value": 451.35442659880687,
+            "investment_date": "2024-05-23",
+            "market_cap": "554.09 billion",
+            "name": "Tesla",
+            "number_of_shares": 2.62461140544825,
+            "percentage_change": 1.02,
+            "ticker": "TSLA",
+            "total_value": 456.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "111"
+            },
+            "current_price": 122.12000274658203,
+            "gain_loss": 5.68,
+            "initial_price": 115.87000274658203,
+            "initial_value": 105.31911247627762,
+            "investment_date": "2024-05-23",
+            "market_cap": "40.85 billion",
+            "name": "Datadog",
+            "number_of_shares": 0.90894200379558,
+            "percentage_change": 5.12,
+            "ticker": "DDOG",
+            "total_value": 111.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "400"
+            },
+            "current_price": 26.510000228881836,
+            "gain_loss": 1.96,
+            "initial_price": 26.3799991607666,
+            "initial_value": 398.0384599472979,
+            "investment_date": "2024-05-23",
+            "market_cap": "25.16 billion",
+            "name": "Philips",
+            "number_of_shares": 15.088645663767752,
+            "percentage_change": 0.49,
+            "ticker": "PHG",
+            "total_value": 400.0,
+            "type": "stock"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "500"
+            },
+            "name": "Netflix",
+            "ticker": "NFLX",
+            "investment_date": "2024-05-23",
+            "initial_price": 612.0900268554688,
+            "current_price": 635.6699829101562,
+            "number_of_shares": 0.7865716699582912,
+            "initial_value": 481.45267458852135,
+            "total_value": 500.0,
+            "gain_loss": 18.55,
+            "percentage_change": 3.71,
+            "market_cap": "273.91 billion"
+        }
+    ]
+}

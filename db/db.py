@@ -40,7 +40,15 @@ def save_report_to_db(uid, report):
     ref.set(report)
     print(f'Saved report for user {uid}')
 
+def save_chart_to_db(uid, encoded_chart):
+    db.reference(f'charts/{uid}').set(encoded_chart)
+
 def get_report_from_db(uid):
     ref = db.reference(f'/users/{uid}/report')
     report = ref.get()
     return report
+
+def get_chart_from_db(uid):
+    chart_ref = db.reference(f'charts/{uid}')
+    return chart_ref.get()
+
