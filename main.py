@@ -4,8 +4,8 @@ import os
 from parser import parser as p
 from api import stocks as api
 from firebase_admin import credentials, auth, db
-from db.db import create_user, add_investment_to_user, get_user_investments, save_report_to_db, get_report_from_db
-from graph.graph import plot_bar_chart
+from db.db import create_user, add_investment_to_user, get_user_investments, save_report_to_db, get_report_from_db, get_chart_from_db, save_chart_to_db
+from graph.graph import plot_bar_chart, decode_base64_to_image, encode_image_to_base64
 
 def main():
     username = input("What's your name? ")
@@ -19,6 +19,15 @@ def main():
             if report:
                 print("User Investment Report:")
                 print(json.dumps(report, indent=4))
+
+                encoded_chart = get_chart_from_db(uid)
+
+                if encoded_chart:
+                    decode_base64_to_image(encoded_chart, 'graph/investment_distribution.png')
+                    print("Investment distribution chart saved to graph/investment_distribution.png")
+                else:
+                    print("No investment distribution chart found for this user.")
+
             else:
                 print("No report found for this user.")
         except auth.UserNotFoundError:
@@ -103,11 +112,9 @@ def main():
 
     print(f"\nUser Investment Report has been saved to {file_name}")
 
-    # Plot both charts and save them
     bar_chart_path = 'graph/investment_distribution.png'
     plot_bar_chart(user_report["investments"], bar_chart_path)
-
-    user_report["investments_distribution"] = os.path.relpath(bar_chart_path)
+    encoded_chart = encode_image_to_base64(bar_chart_path)
 
     user_report_json = json.dumps(user_report, indent=4)
 
@@ -116,6 +123,7 @@ def main():
 
     print(user_report)
     save_report_to_db(uid, user_report)
+    save_chart_to_db(uid, encoded_chart)
 
 if __name__ == "__main__":
     main()
