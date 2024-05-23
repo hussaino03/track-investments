@@ -12,7 +12,9 @@ click==8.1.7
 cloudpathlib==0.16.0
 command-not-found==0.3
 confection==0.1.4
+contourpy==1.2.1
 cryptography==3.4.8
+cycler==0.12.1
 cymem==2.0.8
 dbus-python==1.2.18
 distro==1.7.0
@@ -21,6 +23,7 @@ en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 exceptiongroup==1.2.1
 firebase-admin==6.5.0
+fonttools==4.51.0
 frozendict==2.4.4
 google-api-core==2.19.0
 google-api-python-client==2.129.0
@@ -44,6 +47,7 @@ importlib-metadata==4.6.4
 jeepney==0.7.1
 Jinja2==3.1.4
 keyring==23.5.0
+kiwisolver==1.4.5
 langcodes==3.4.0
 language_data==1.2.0
 launchpadlib==1.10.16
@@ -52,6 +56,7 @@ lazr.uri==1.0.6
 lxml==5.2.2
 marisa-trie==1.1.1
 MarkupSafe==2.1.5
+matplotlib==3.9.0
 more-itertools==8.10.0
 msgpack==1.0.8
 multitasking==0.0.11
@@ -63,6 +68,7 @@ openai==1.30.1
 packaging==24.0
 pandas==2.2.2
 peewee==3.17.5
+pillow==10.3.0
 platformdirs==4.2.2
 preshed==3.0.9
 proto-plus==1.23.0

@@ -1,9 +1,11 @@
 import json
 import datetime
+import os
 from parser import parser as p
 from api import stocks as api
 from firebase_admin import credentials, auth, db
 from db.db import create_user, add_investment_to_user, get_user_investments, save_report_to_db, get_report_from_db
+from graph.graph import plot_bar_chart
 
 def main():
     username = input("What's your name? ")
@@ -97,14 +99,20 @@ def main():
                 else:
                     print(f"Could not find stock symbol for {entity[0]}")
 
-    user_report_json = json.dumps(user_report, indent=4)
-
     file_name = f"{username}_investment_report.json"
+
+    print(f"\nUser Investment Report has been saved to {file_name}")
+
+    # Plot both charts and save them
+    bar_chart_path = 'graph/investment_distribution.png'
+    plot_bar_chart(user_report["investments"], bar_chart_path)
+
+    user_report["investments_distribution"] = os.path.relpath(bar_chart_path)
+
+    user_report_json = json.dumps(user_report, indent=4)
 
     with open(file_name, "w") as file:
         file.write(user_report_json)
-
-    print(f"\nUser Investment Report has been saved to {file_name}")
 
     print(user_report)
     save_report_to_db(uid, user_report)
