@@ -8,6 +8,7 @@ from db.db import create_user, add_investment_to_user, get_user_investments, sav
 from graph.graph import plot_bar_chart, decode_base64_to_image, encode_image_to_base64
 
 def main():
+    investment_data, existing_data = [], []
     username = input("What's your name? ")
     is_returning_user = input("Are you a returning user? (y/n): ").lower()
     if is_returning_user == 'y':
@@ -21,6 +22,11 @@ def main():
                 print(json.dumps(report, indent=4))
 
                 encoded_chart = get_chart_from_db(uid)
+
+                if isinstance(report, dict):
+                    existing_data = report.get("investments", [])
+                else:
+                    existing_data = []
 
                 if encoded_chart:
                     decode_base64_to_image(encoded_chart, 'graph/investment_distribution.png')
@@ -43,8 +49,6 @@ def main():
             print("Could not create user. Exiting.")
             return
 
-    investment_data = []
-
     print(f"Hello {username}, let's add your investment details. You can type 'exit' or 'quit' to finish at any time.")
     investment_date = datetime.datetime.now().strftime('%Y-%m-%d')
 
@@ -60,16 +64,14 @@ def main():
 
         investment_data.append(investment_info)
 
-        print(f"\nInvestment {len(investment_data)}:")
+        if len(existing_data) == 0:
+            print(f"\nInvestment {len(investment_data)}:")
+        else:
+            print(f"\nInvestment {len(investment_data) + len(existing_data)}:")
         print(f"  Entities: {investment_info['entities']}")
         print(f"  Amount: {investment_info['amount']}")
-
-    # Create the mock user report
-    user_report = {
-        "username": username,
-        "investments": []
-    }
-
+    
+    data = []
     for investment in investment_data:
         for entity in investment["entities"]:
             if entity[1] == "ORG":
@@ -88,7 +90,7 @@ def main():
                             formatted_market_cap = api.format_market_cap(market_cap) if market_cap else "N/A"
 
                             investment_entry = {
-                                "type": "stock",  # assuming all are stocks for now
+                                "type": "stock",  
                                 "amount": {"int": str(int(amount))},
                                 "name": entity[0],
                                 "ticker": symbol,
@@ -102,11 +104,21 @@ def main():
                                 "percentage_change": percentage_change,
                                 "market_cap": formatted_market_cap
                             }
-                            user_report["investments"].append(investment_entry)
+                            data.append(investment_entry)
                         else:
                             print(f"Could not fetch the price for {entity[0]} ({symbol})")
                 else:
                     print(f"Could not find stock symbol for {entity[0]}")
+
+    if len(existing_data) != 0:
+        investment_data = existing_data + data
+    else:
+        investment_data = data
+
+    user_report = {
+        "username": username,
+        "investments": investment_data
+    }
 
     file_name = f"{username}_investment_report.json"
 
