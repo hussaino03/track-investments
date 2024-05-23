@@ -41,8 +41,13 @@ Schedule automated generation of investments report (updates on the current mark
 
 ✅ Create data visualizations (graphs, charts) for investment performance over time.
 
+✅ Allow users to update their existing investments
+
 Milestones:
 
-![image](https://github.com/hussaino03/track-investments/assets/67332652/2e72d04e-60ff-4a2b-b17e-383640f33d15)
+![image](https://github.com/hussaino03/track-investments/assets/67332652/1edb1e2d-39d0-4b5b-8007-af436d3482b6)
+
+![image](https://github.com/hussaino03/track-investments/assets/67332652/0b79addd-3846-49dc-80d2-cb30102460d6)
+
 
 
