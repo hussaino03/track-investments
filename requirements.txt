@@ -19,8 +19,6 @@ cymem==2.0.8
 dbus-python==1.2.18
 distro==1.7.0
 distro-info==1.1+ubuntu0.1
-en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 exceptiongroup==1.2.1
 firebase-admin==6.5.0
 fonttools==4.51.0

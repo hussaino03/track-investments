@@ -1,5 +1,4 @@
 # Ignore Python cache files
 **/__pycache__/
 *.py[cod]
-models/
 db/investmentstrack-firebase-adminsdk-s3nhe-31d8455c83.json

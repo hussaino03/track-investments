@@ -2,18 +2,11 @@ import re
 import spacy
 import os, sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from train import model_trainer
 
 # Path to the saved model
 model_path = "./models/model"
 
-# Check if the model exists
-if os.path.exists(model_path):
-    # Load the saved model
-    nlp = spacy.load(model_path)
-else:
-    # Load the base model and train it
-    nlp = model_trainer.train_model()
+nlp = spacy.load(model_path)
 
 def extract_investment_info(username, user_input):
     doc = nlp(user_input)

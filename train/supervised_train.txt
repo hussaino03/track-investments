@@ -1,0 +1,175 @@
+{"text": "I invested $1000 in OpenAI and $2000 in Tesla", "annotation": [[11, 15, "MONEY"], [19, 26, "ORG"], [31, 35, "MONEY"], [39, 44, "ORG"]]}
+{"text": "Put $500 in Wealthsimple and $200 in Google", "annotation": [[4, 8, "MONEY"], [12, 24, "ORG"], [29, 33, "MONEY"], [37, 43, "ORG"]]}
+{"text": "I invested $300 in Wealthsimple", "annotation": [[11, 15, "MONEY"], [19, 31, "ORG"]]}
+{"text": "Put 500 in Wealthsimple", "annotation": [[4, 7, "MONEY"], [11, 23, "ORG"]]}
+{"text": "Bought shares of MicroStrategy for $1500", "annotation": [[14, 27, "ORG"], [32, 37, "MONEY"]]}
+{"text": "Invested $2500 in a startup called TechFlow", "annotation": [[9, 14, "MONEY"], [33, 40, "ORG"]]}
+{"text": "My portfolio includes stocks from Initech worth $1200", "annotation": [[35, 42, "ORG"], [49, 54, "MONEY"]]}
+{"text": "I have investments in Omni Consumer Products totaling $3000", "annotation": [[22, 44, "ORG"], [54, 59, "MONEY"]]}
+{"text": "Bought some stocks from Vandelay Industries for $4500", "annotation": [[25, 41, "ORG"], [46, 51, "MONEY"]]}
+{"text": "I put my money in Pied Piper amounting to $2000", "annotation": [[18, 27, "ORG"], [42, 47, "MONEY"]]}
+{"text": "I have shares in Hooli worth $500", "annotation": [[16, 21, "ORG"], [28, 31, "MONEY"]]}
+{"text": "Invested in a small firm, E Corp, with $700", "annotation": [[24, 30, "ORG"], [37, 41, "MONEY"]]}
+{"text": "My money is in a company called Stark Industries, investing $2500", "annotation": [[26, 41, "ORG"], [54, 59, "MONEY"]]}
+{"text": "invested $500 in Tesla", "annotation": [[9, 13, "MONEY"], [17, 22, "ORG"]]}
+{"text": "yo whatsup I just invested 5 bands into Tesla right now", "annotation": [[26, 31, "MONEY"], [37, 42, "ORG"]]}
+{"text": "I just put $1200 into Apple stocks", "annotation": [[11, 16, "MONEY"], [22, 27, "ORG"]]}
+{"text": "Added 2000 dollars to Microsoft investment", "annotation": [[6, 17, "MONEY"], [21, 30, "ORG"]]}
+{"text": "Just dropped $300 on Amazon shares", "annotation": [[13, 17, "MONEY"], [21, 27, "ORG"]]}
+{"text": "Invested in Google and Apple today", "annotation": [[10, 16, "ORG"], [21, 26, "ORG"]]}
+{"text": "Bought stocks of Tesla and Amazon", "annotation": [[14, 19, "ORG"], [24, 30, "ORG"]]}
+{"text": "Invested $200 in Google and $300 in Amazon", "annotation": [[9, 12, "MONEY"], [16, 22, "ORG"], [27, 30, "MONEY"], [34, 40, "ORG"]]}
+{"text": "I have invested in Wealthsimple and Google", "annotation": [[18, 30, "ORG"], [35, 41, "ORG"]]}
+{"text": "Investments in Apple, Tesla, and Google", "annotation": [[14, 19, "ORG"], [21, 26, "ORG"], [32, 38, "ORG"]]}
+{"text": "Google is my favorite company", "annotation": [[0, 6, "ORG"]]}
+{"text": "Microsoft just released a new product", "annotation": [[0, 9, "ORG"]]}
+{"text": "Investors are optimistic about Alphabet's future", "annotation": [[30, 38, "ORG"]]}
+{"text": "We're hiring at Facebook", "annotation": [[16, 24, "ORG"]]}
+{"text": "Tesla's stock price has been soaring", "annotation": [[0, 5, "ORG"]]}
+{"text": "Apple unveiled its latest iPhone model", "annotation": [[0, 5, "ORG"]]}
+{"text": "Amazon is expanding its services", "annotation": [[0, 6, "ORG"]]}
+{"text": "Google announced a new partnership", "annotation": [[0, 6, "ORG"]]}
+{"text": "Intel is facing supply chain issues", "annotation": [[0, 5, "ORG"]]}
+{"text": "Meta is working on new AI technologies", "annotation": [[0, 4, "ORG"]]}
+{"text": "Netflix released a new series", "annotation": [[0, 7, "ORG"]]}
+{"text": "Spotify has increased its subscription fees", "annotation": [[0, 7, "ORG"]]}
+{"text": "Uber is testing self-driving cars", "annotation": [[0, 4, "ORG"]]}
+{"text": "bought 500 Apple shares", "annotation": [[7, 12, "ORG"], [6, 9, "MONEY"]]}
+{"text": "got 250 Netflix shares", "annotation": [[4, 11, "ORG"], [0, 3, "MONEY"]]}
+{"text": "grabbed 300 Tesla shares", "annotation": [[8, 13, "ORG"], [0, 3, "MONEY"]]}
+{"text": "Invested $2500 in a startup called TechFlow", "annotation": [[9, 14, "MONEY"], [33, 40, "ORG"]]}
+{"text": "Bought some stocks from Vandelay Industries for $4500", "annotation": [[25, 41, "ORG"], [46, 51, "MONEY"]]}
+{"text": "Bought shares of MicroStrategy for $1500", "annotation": [[14, 27, "ORG"], [32, 37, "MONEY"]]}
+{"text": "I have investments in Omni Consumer Products totaling $3000", "annotation": [[22, 44, "ORG"], [54, 59, "MONEY"]]}
+{"text": "yo whatsup I just invested 5 bands into Tesla right now", "annotation": [[26, 31, "MONEY"], [37, 42, "ORG"]]}
+{"text": "I just put $1200 into Apple stocks", "annotation": [[10, 15, "MONEY"], [21, 26, "ORG"]]}
+{"text": "Added 2000 dollars to Microsoft investment", "annotation": [[6, 10, "MONEY"], [23, 32, "ORG"]]}
+{"text": "Just dropped $300 on Amazon shares", "annotation": [[13, 17, "MONEY"], [21, 27, "ORG"]]}
+{"text": "Invested in Google and Apple today", "annotation": [[11, 17, "ORG"], [22, 27, "ORG"]]}
+{"text": "Bought stocks of Tesla and Amazon", "annotation": [[16, 21, "ORG"], [26, 32, "ORG"]]}
+{"text": "Invested $200 in Google and $300 in Amazon", "annotation": [[9, 12, "MONEY"], [16, 22, "ORG"], [27, 30, "MONEY"], [34, 40, "ORG"]]}
+{"text": "I have invested in Wealthsimple and Google", "annotation": [[21, 33, "ORG"], [38, 44, "ORG"]]}
+{"text": "Investments in Apple, Tesla, and Google", "annotation": [[15, 20, "ORG"], [22, 27, "ORG"], [33, 39, "ORG"]]}
+{"text": "Google is my favorite company", "annotation": [[0, 6, "ORG"]]}
+{"text": "Microsoft just released a new product", "annotation": [[0, 9, "ORG"]]}
+{"text": "Investors are optimistic about Alphabet's future", "annotation": [[32, 40, "ORG"]]}
+{"text": "We're hiring at Facebook", "annotation": [[17, 25, "ORG"]]}
+{"text": "Tesla's stock price has been soaring", "annotation": [[0, 5, "ORG"]]}
+{"text": "Apple unveiled its latest iPhone model", "annotation": [[0, 5, "ORG"]]}
+{"text": "Amazon is expanding its services", "annotation": [[0, 6, "ORG"]]}
+{"text": "Google announced a new partnership", "annotation": [[0, 6, "ORG"]]}
+{"text": "Intel is facing supply chain issues", "annotation": [[0, 5, "ORG"]]}
+{"text": "IBM is investing in quantum computing", "annotation": [[0, 3, "ORG"]]}
+{"text": "Netflix's latest series has received critical acclaim", "annotation": [[0, 7, "ORG"]]}
+{"text": "Oracle acquired a promising startup", "annotation": [[0, 6, "ORG"]]}
+{"text": "Twitter's CEO announced major changes", "annotation": [[0, 7, "ORG"]]}
+{"text": "Uber is expanding into new markets", "annotation": [[0, 4, "ORG"]]}
+{"text": "Walmart's online sales are booming", "annotation": [[0, 7, "ORG"]]}
+{"text": "Zoom's video conferencing software is widely used", "annotation": [[0, 4, "ORG"]]}
+{"text": "Salesforce introduced new features", "annotation": [[0, 10, "ORG"]]}
+{"text": "Snapchat's user base continues to grow", "annotation": [[0, 9, "ORG"]]}
+{"text": "Adobe announced record quarterly earnings", "annotation": [[0, 5, "ORG"]]}
+{"text": "Nvidia is a leader in graphics processing", "annotation": [[0, 6, "ORG"]]}
+{"text": "PayPal's payment platform is secure", "annotation": [[0, 6, "ORG"]]}
+{"text": "Sony unveiled its latest gaming console", "annotation": [[0, 4, "ORG"]]}
+{"text": "Square's stock price surged after earnings report", "annotation": [[0, 6, "ORG"]]}
+{"text": "Reddit's community is discussing new trends", "annotation": [[0, 6, "ORG"]]}
+{"text": "LinkedIn is a popular platform for professionals", "annotation": [[0, 8, "ORG"]]}
+{"text": "bought 500 Apple shares", "annotation": [[7, 12, "ORG"], [0, 3, "MONEY"]]}
+{"text": "just purchased 1000 Google shares", "annotation": [[17, 23, "ORG"], [0, 4, "MONEY"]]}
+{"text": "acquired 200 Amazon shares", "annotation": [[10, 16, "ORG"], [0, 3, "MONEY"]]}
+{"text": "grabbed 300 Tesla shares", "annotation": [[8, 13, "ORG"], [0, 3, "MONEY"]]}
+{"text": "picked up 400 Microsoft shares", "annotation": [[10, 19, "ORG"], [0, 3, "MONEY"]]}
+{"text": "got 250 Netflix shares", "annotation": [[5, 11, "ORG"], [0, 3, "MONEY"]]}
+{"text": "bought 500 apple shares", "annotation": [[7, 12, "ORG"], [0, 3, "MONEY"]]}
+{"text": "I just invested 5 bands into Tesla right now", "annotation": [[26, 31, "MONEY"], [37, 42, "ORG"]]}
+{"text": "Bought 5 grand worth of Tesla shares", "annotation": [[7, 12, "MONEY"], [23, 28, "ORG"]]}
+{"text": "Invested $5K in Amazon stocks", "annotation": [[9, 12, "MONEY"], [16, 22, "ORG"]]}
+{"text": "Spent 5 large on Apple investments", "annotation": [[6, 11, "MONEY"], [23, 28, "ORG"]]}
+{"text": "Put down $5000 for Google shares", "annotation": [[8, 13, "MONEY"], [18, 24, "ORG"]]}
+{"text": "Invested $10,000 in Microsoft", "annotation": [[9, 15, "MONEY"], [20, 29, "ORG"]]}
+{"text": "Purchased 5 racks worth of Tesla stock", "annotation": [[12, 17, "MONEY"], [28, 33, "ORG"]]}
+{"text": "Dropped $5000 on Apple", "annotation": [[8, 13, "MONEY"], [18, 23, "ORG"]]}
+{"text": "Invested 5 G's in Amazon", "annotation": [[9, 14, "MONEY"], [19, 25, "ORG"]]}
+{"text": "Put $5000 into Apple Inc", "annotation": [[4, 9, "MONEY"], [16, 26, "ORG"]]}
+{"text": "I bought shares worth £1500 in Amazon", "annotation": [[23, 28, "MONEY"], [32, 38, "ORG"]]}
+{"text": "Invested 2000 USD in Google", "annotation": [[9, 14, "MONEY"], [18, 24, "ORG"]]}
+{"text": "Added $500 to Apple and $1000 to Microsoft", "annotation": [[6, 10, "MONEY"], [14, 19, "ORG"], [24, 30, "MONEY"], [34, 43, "ORG"]]}
+{"text": "Invested $750.50 in Tesla", "annotation": [[9, 16, "MONEY"], [20, 25, "ORG"]]}
+{"text": "Put ¥10000 in Sony and $2000 in Amazon", "annotation": [[4, 10, "MONEY"], [14, 18, "ORG"], [24, 29, "MONEY"], [33, 39, "ORG"]]}
+{"text": "Invested two thousand dollars in Google and 2500 euros in Facebook", "annotation": [[9, 25, "MONEY"], [29, 35, "ORG"], [40, 48, "MONEY"], [52, 60, "ORG"]]}
+{"text": "Dropped $300 on Amazon stocks", "annotation": [[8, 12, "MONEY"], [16, 22, "ORG"]]}
+{"text": "Yesterday I invested $500 in Apple stocks", "annotation": [[11, 15, "MONEY"], [19, 24, "ORG"]]}
+{"text": "I just put $300 into Amazon", "annotation": [[10, 14, "MONEY"], [20, 26, "ORG"]]}
+{"text": "Invested $500 in amazon", "annotation": [[9, 15, "MONEY"], [19, 25, "ORG"]]}
+{"text": "Bought stocks from google for $300", "annotation": [[24, 30, "ORG"], [35, 38, "MONEY"]]}
+{"text": "Added 200 shares of facebook for $1000", "annotation": [[23, 30, "ORG"], [35, 40, "MONEY"]]}
+{"text": "Invested $500 in apple", "annotation": [[9, 15, "MONEY"], [19, 24, "ORG"]]}
+{"text": "I have shares in microsoft worth $2000", "annotation": [[16, 25, "ORG"], [32, 37, "MONEY"]]}
+{"text": "Purchased stocks from ibm for $1500", "annotation": [[24, 27, "ORG"], [32, 37, "MONEY"]]}
+{"text": "Spent $1000 on tesla stocks", "annotation": [[9, 15, "MONEY"], [20, 25, "ORG"]]}
+{"text": "Invested $200 in netflix", "annotation": [[9, 13, "MONEY"], [17, 24, "ORG"]]}
+{"text": "Bought shares from amazon for $500", "annotation": [[18, 24, "ORG"], [29, 34, "MONEY"]]}
+{"text": "Dropped $300 on twitter stocks", "annotation": [[9, 13, "MONEY"], [18, 25, "ORG"]]}
+{"text": "Invested in snapchat with $400", "annotation": [[16, 24, "ORG"], [30, 34, "MONEY"]]}
+{"text": "Purchased shares from ebay for $600", "annotation": [[24, 28, "ORG"], [33, 38, "MONEY"]]}
+{"text": "Added 1000 shares of spotify for $2000", "annotation": [[20, 27, "ORG"], [32, 37, "MONEY"]]}
+{"text": "Invested $500 in linkedin", "annotation": [[9, 15, "MONEY"], [19, 27, "ORG"]]}
+{"text": "Bought stocks from reddit for $100", "annotation": [[24, 30, "ORG"], [35, 38, "MONEY"]]}
+{"text": "Spent $300 on pinterest shares", "annotation": [[6, 12, "MONEY"], [17, 26, "ORG"]]}
+{"text": "Invested in zoom with $800", "annotation": [[16, 20, "ORG"], [26, 30, "MONEY"]]}
+{"text": "Purchased $700 worth of yelp shares", "annotation": [[11, 15, "MONEY"], [29, 33, "ORG"]]}
+{"text": "Added 500 stocks of slack for $3000", "annotation": [[24, 29, "ORG"], [34, 39, "MONEY"]]}
+{"text": "Dropped $2000 on pinterest", "annotation": [[8, 14, "MONEY"], [19, 28, "ORG"]]}
+{"text": "lmao no way ur boy put 500 in Amazon rn", "annotation": [[20, 26, "MONEY"], [30, 36, "ORG"]]}
+{"text": "hi! today i put 400 in Microsoft, and then i also invested 90 in Nike", "annotation": [[12, 15, "MONEY"], [23, 32, "ORG"], [53, 57, "ORG"]]}
+{"text": "put 500 in tesla", "annotation": [[4, 7, "MONEY"], [11, 16, "ORG"]]}
+{"text": "Invested a grand in Microsoft and two hundred bucks in Apple", "annotation": [[9, 15, "MONEY"], [19, 28, "ORG"], [33, 50, "MONEY"], [54, 59, "ORG"]]}
+{"text": "Put fifty dollars in Tesla and 100 euros in Amazon", "annotation": [[4, 16, "MONEY"], [20, 25, "ORG"], [30, 38, "MONEY"], [42, 48, "ORG"]]}
+{"text": "Just bought 100 shares of SpaceX for $50k", "annotation": [[11, 14, "MONEY"], [23, 29, "ORG"], [34, 38, "MONEY"]]}
+{"text": "Yesterday I invested in Alphabet and dropped 5 grand on Facebook", "annotation": [[24, 32, "ORG"], [45, 52, "MONEY"], [56, 64, "ORG"]]}
+{"text": "Added a few thousand dollars to my portfolio with investments in Amazon and Google", "annotation": [[6, 27, "MONEY"], [65, 71, "ORG"], [76, 82, "ORG"]]}
+{"text": "Put a couple of bucks in OpenAI and several hundred in IBM", "annotation": [[4, 18, "MONEY"], [22, 28, "ORG"], [37, 52, "MONEY"], [56, 59, "ORG"]]}
+{"text": "Invested in Apple with $10k, and in Tesla with 8 grand", "annotation": [[11, 16, "ORG"], [22, 26, "MONEY"], [35, 40, "ORG"], [46, 52, "MONEY"]]}
+{"text": "Bought 50k in Tesla and $10,000 in Amazon", "annotation": [[7, 11, "MONEY"], [15, 20, "ORG"], [25, 31, "MONEY"], [35, 41, "ORG"]]}
+{"text": "Invested 5000 USD in Google, 2000 euros in Apple, and 1500 yen in Tesla", "annotation": [[9, 18, "MONEY"], [22, 28, "ORG"], [30, 40, "MONEY"], [44, 49, "ORG"], [55, 63, "MONEY"], [67, 72, "ORG"]]}
+{"text": "Put down 10 grand for Alphabet and 3k for Netflix", "annotation": [[9, 16, "MONEY"], [21, 29, "ORG"], [34, 36, "MONEY"], [41, 48, "ORG"]]}
+{"text": "Invested in Google and Facebook, both with substantial amounts", "annotation": [[11, 17, "ORG"], [22, 30, "ORG"]]}
+{"text": "Bought 20 shares of Microsoft for fifty bucks", "annotation": [[7, 9, "MONEY"], [18, 27, "ORG"], [32, 43, "MONEY"]]}
+{"text": "I have $500 in Amazon and £1000 in Google", "annotation": [[7, 11, "MONEY"], [15, 21, "ORG"], [26, 31, "MONEY"], [35, 41, "ORG"]]}
+{"text": "Acquired stocks worth ten thousand dollars in IBM", "annotation": [[19, 41, "MONEY"], [45, 48, "ORG"]]}
+{"text": "Invested in 5 different companies, including Tesla, Google, and Apple", "annotation": [[11, 37, "MONEY"], [49, 54, "ORG"], [56, 62, "ORG"], [68, 73, "ORG"]]}
+{"text": "Bought $2000 in Google and 3000 shares in Amazon", "annotation": [[7, 12, "MONEY"], [16, 22, "ORG"], [27, 32, "MONEY"], [36, 42, "ORG"]]}
+{"text": "Invested a significant sum in Netflix, about 5000 dollars", "annotation": [[32, 39, "ORG"], [46, 59, "MONEY"]]}
+{"text": "Put 700 in Disney and $8000 in Apple", "annotation": [[4, 7, "MONEY"], [11, 17, "ORG"], [22, 27, "MONEY"], [31, 36, "ORG"]]}
+{"text": "Invested my entire savings, $20000, in OpenAI and IBM", "annotation": [[28, 34, "MONEY"], [38, 44, "ORG"], [49, 52, "ORG"]]}
+{"text": "Dropped fifty grand on Amazon stocks", "annotation": [[8, 19, "MONEY"], [23, 29, "ORG"]]}
+{"text": "Purchased $1000 worth of shares in Google and Apple", "annotation": [[10, 15, "MONEY"], [35, 41, "ORG"], [46, 51, "ORG"]]}
+{"text": "Bought $750 in Twitter, $1250 in Microsoft, and $500 in Spotify", "annotation": [[7, 11, "MONEY"], [15, 22, "ORG"], [24, 29, "MONEY"], [33, 42, "ORG"], [48, 52, "MONEY"], [56, 63, "ORG"]]}
+{"text": "I put down 2000 in Alphabet and 1500 in Netflix", "annotation": [[10, 14, "MONEY"], [18, 26, "ORG"], [31, 35, "MONEY"], [39, 46, "ORG"]]}
+{"text": "Invested 10 G's in Amazon, 5k in Google, and 3 stacks in Facebook", "annotation": [[9, 14, "MONEY"], [18, 24, "ORG"], [26, 28, "MONEY"], [32, 38, "ORG"], [43, 51, "MONEY"], [55, 63, "ORG"]]}
+{"text": "Put a hundred in Tesla and a thousand in Apple", "annotation": [[4, 15, "MONEY"], [19, 24, "ORG"], [29, 38, "MONEY"], [42, 47, "ORG"]]}
+{"text": "Bought a few grand worth of Netflix and Spotify", "annotation": [[9, 18, "MONEY"], [30, 37, "ORG"], [42, 49, "ORG"]]}
+{"text": "Invested in Tesla and Google with my savings", "annotation": [[11, 16, "ORG"], [21, 27, "ORG"]]}
+{"text": "Put 2k in Facebook, $300 in Apple, and 100 Euros in Amazon", "annotation": [[4, 6, "MONEY"], [10, 18, "ORG"], [20, 24, "MONEY"], [28, 33, "ORG"], [39, 48, "MONEY"], [52, 58, "ORG"]]}
+{"text": "Bought 5000 worth of Tesla, 10k of Google, and 3k in Amazon", "annotation": [[7, 11, "MONEY"], [20, 25, "ORG"], [28, 31, "MONEY"], [35, 41, "ORG"], [46, 49, "MONEY"], [53, 59, "ORG"]]}
+{"text": "Put 750 dollars in Apple and 1500 in Microsoft", "annotation": [[4, 17, "MONEY"], [21, 26, "ORG"], [31, 35, "MONEY"], [39, 48, "ORG"]]}
+{"text": "Invested a thousand bucks in Amazon, and 2000 in Google", "annotation": [[9, 24, "MONEY"], [28, 34, "ORG"], [41, 46, "MONEY"], [50, 56, "ORG"]]}
+{"text": "Spent 5 racks on Tesla, 2 grand on Google, and 3k on Netflix", "annotation": [[6, 13, "MONEY"], [17, 22, "ORG"], [26, 33, "MONEY"], [37, 43, "ORG"], [48, 50, "MONEY"], [54, 61, "ORG"]]}
+{"text": "Invested in Amazon, Google, and Tesla with $10,000, 2000 euros, and $5k", "annotation": [[11, 17, "ORG"], [19, 25, "ORG"], [30, 35, "ORG"], [41, 48, "MONEY"], [50, 61, "MONEY"], [66, 69, "MONEY"]]}
+{"text": "Bought 10k in stocks from Google and 5000 in Amazon", "annotation": [[7, 10, "MONEY"], [27, 33, "ORG"], [38, 42, "MONEY"], [46, 52, "ORG"]]}
+{"text": "What did you invest in today? hi! today I invested 400 in Apple", "annotation": [[42, 45, "MONEY"], [49, 54, "ORG"]]}
+{"text": "ayoooo your boy just put 300 in tesla lmao wtfffff", "annotation": [[20, 23, "MONEY"], [27, 32, "ORG"]]}
+{"text": "I spent 5000 on Microsoft and 7000 on Google", "annotation": [[9, 13, "MONEY"], [27, 36, "ORG"], [41, 45, "MONEY"], [49, 55, "ORG"]]}
+{"text": "She invested 2000 dollars in Facebook and 1500 in Amazon", "annotation": [[12, 16, "MONEY"], [32, 40, "ORG"], [45, 49, "MONEY"], [53, 59, "ORG"]]}
+{"text": "Dropped 500 euros on Spotify shares", "annotation": [[8, 12, "MONEY"], [16, 23, "ORG"]]}
+{"text": "Spent 300 bucks on Apple and 450 on Google", "annotation": [[6, 9, "MONEY"], [24, 29, "ORG"], [34, 37, "MONEY"], [41, 47, "ORG"]]}
+{"text": "Put 1000 into Tesla and 2000 into SpaceX", "annotation": [[4, 8, "MONEY"], [13, 18, "ORG"], [23, 27, "MONEY"], [32, 38, "ORG"]]}
+{"text": "Invested 5000 in Netflix and 3000 in Hulu", "annotation": [[9, 13, "MONEY"], [17, 24, "ORG"], [29, 33, "MONEY"], [37, 41, "ORG"]]}
+{"text": "Bought shares worth 1500 in Amazon", "annotation": [[20, 24, "MONEY"], [28, 34, "ORG"]]}
+{"text": "Spent 2000 on shares of Sony", "annotation": [[6, 10, "MONEY"], [24, 28, "ORG"]]}
+{"text": "I invested 3000 euros in BMW and 2500 in Mercedes", "annotation": [[11, 15, "MONEY"], [25, 28, "ORG"], [33, 37, "MONEY"], [41, 49, "ORG"]]}
+{"text": "Purchased stocks worth 2000 in Tesla and 2500 in SpaceX", "annotation": [[22, 26, "MONEY"], [31, 36, "ORG"], [41, 45, "MONEY"], [49, 55, "ORG"]]}
+{"text": "Put 3000 into Netflix, Hulu, and Disney+", "annotation": [[4, 8, "MONEY"], [13, 20, "ORG"], [22, 26, "ORG"], [31, 38, "ORG"]]}
+{"text": "I invested 5000 dollars in a mix of Twitter and Snapchat shares", "annotation": [[11, 15, "MONEY"], [29, 36, "ORG"], [41, 49, "ORG"]]}
+{"text": "hi! today I put 40 in Microsoft", "annotation": [[11, 13, "MONEY"], [17, 26, "ORG"]]}
