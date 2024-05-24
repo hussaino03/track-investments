@@ -24,7 +24,7 @@ def read_training_data(file_path, test_size=0.2, random_state=42):
     return train_data, valid_data
 
 # Read training data from file
-train_data_file = "train.txt"
+train_data_file = "supervised_train.txt"
 TRAIN_DATA = read_training_data(train_data_file)
 
 def check_entity_alignment(nlp, text, entities):
