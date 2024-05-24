@@ -121,21 +121,55 @@
             "type": "stock"
         },
         {
-            "type": "stock",
             "amount": {
                 "int": "500"
             },
-            "name": "Netflix",
-            "ticker": "NFLX",
-            "investment_date": "2024-05-23",
-            "initial_price": 612.0900268554688,
             "current_price": 635.6699829101562,
-            "number_of_shares": 0.7865716699582912,
-            "initial_value": 481.45267458852135,
-            "total_value": 500.0,
             "gain_loss": 18.55,
+            "initial_price": 612.0900268554688,
+            "initial_value": 481.45267458852135,
+            "investment_date": "2024-05-23",
+            "market_cap": "273.91 billion",
+            "name": "Netflix",
+            "number_of_shares": 0.7865716699582912,
             "percentage_change": 3.71,
-            "market_cap": "273.91 billion"
+            "ticker": "NFLX",
+            "total_value": 500.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "800"
+            },
+            "current_price": 1037.989990234375,
+            "gain_loss": 116.01,
+            "initial_price": 887.469970703125,
+            "initial_value": 683.9911591076033,
+            "investment_date": "2024-05-23",
+            "market_cap": "2.55 trillion",
+            "name": "Nvidia",
+            "number_of_shares": 0.7707203417437218,
+            "percentage_change": 14.5,
+            "ticker": "NVDA",
+            "total_value": 800.0,
+            "type": "stock"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "900"
+            },
+            "name": "AMD",
+            "ticker": "AMD",
+            "investment_date": "2024-05-23",
+            "initial_price": 152.38999938964844,
+            "current_price": 160.42999267578125,
+            "number_of_shares": 5.6099235871614255,
+            "initial_value": 854.896252023504,
+            "total_value": 900.0,
+            "gain_loss": 45.1,
+            "percentage_change": 5.01,
+            "market_cap": "267.53 billion"
         }
     ]
 }

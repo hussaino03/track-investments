@@ -5,8 +5,11 @@ import base64
 def plot_bar_chart(investments, output_path):
     labels = [inv['name'] for inv in investments]
     gain_loss = [inv['gain_loss'] for inv in investments]
+    
+    colors = ['red' if gl < 0 else 'darkgreen' for gl in gain_loss]
+
     plt.figure(figsize=(10, 6))
-    plt.bar(labels, gain_loss, color='skyblue')
+    plt.bar(labels, gain_loss, color=colors)
     plt.xlabel('Company')
     plt.ylabel('Gain/Loss ($)')
     plt.title('Gain/Loss for Each Investment')
