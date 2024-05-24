@@ -47,7 +47,7 @@ Schedule automated generation of investments report (updates on the current mark
 
 Milestones:
 
-![image](https://github.com/hussaino03/track-investments/assets/67332652/72514d5d-bf1f-4aca-a694-07f588588a71)
+![image](https://github.com/hussaino03/track-investments/assets/67332652/0cb1a4d4-da29-467a-8f98-f6e7479906be)
 
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/0b79addd-3846-49dc-80d2-cb30102460d6)
 
