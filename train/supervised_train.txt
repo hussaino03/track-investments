@@ -123,7 +123,7 @@
 {"text": "Dropped $2000 on pinterest", "annotation": [[8, 14, "MONEY"], [19, 28, "ORG"]]}
 {"text": "lmao no way ur boy put 500 in Amazon rn", "annotation": [[20, 26, "MONEY"], [30, 36, "ORG"]]}
 {"text": "hi! today i put 400 in Microsoft, and then i also invested 90 in Nike", "annotation": [[12, 15, "MONEY"], [23, 32, "ORG"], [53, 57, "ORG"]]}
-{"text": "put 500 in Tesla", "annotation": [[4, 7, "MONEY"], [11, 16, "ORG"]]}
+{"text": "put 500 in tesla", "annotation": [[4, 7, "MONEY"], [11, 16, "ORG"]]}
 {"text": "Invested a grand in Microsoft and two hundred bucks in Apple", "annotation": [[9, 15, "MONEY"], [19, 28, "ORG"], [33, 50, "MONEY"], [54, 59, "ORG"]]}
 {"text": "Put fifty dollars in Tesla and 100 euros in Amazon", "annotation": [[4, 16, "MONEY"], [20, 25, "ORG"], [30, 38, "MONEY"], [42, 48, "ORG"]]}
 {"text": "Just bought 100 shares of SpaceX for $50k", "annotation": [[11, 14, "MONEY"], [23, 29, "ORG"], [34, 38, "MONEY"]]}
@@ -172,3 +172,4 @@
 {"text": "Purchased stocks worth 2000 in Tesla and 2500 in SpaceX", "annotation": [[22, 26, "MONEY"], [31, 36, "ORG"], [41, 45, "MONEY"], [49, 55, "ORG"]]}
 {"text": "Put 3000 into Netflix, Hulu, and Disney+", "annotation": [[4, 8, "MONEY"], [13, 20, "ORG"], [22, 26, "ORG"], [31, 38, "ORG"]]}
 {"text": "I invested 5000 dollars in a mix of Twitter and Snapchat shares", "annotation": [[11, 15, "MONEY"], [29, 36, "ORG"], [41, 49, "ORG"]]}
+{"text": "hi! today I put 40 in Microsoft", "annotation": [[11, 13, "MONEY"], [17, 26, "ORG"]]}

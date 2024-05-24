@@ -19,8 +19,7 @@
   "labels":{
     "ner":[
       "MONEY",
-      "ORG",
-      "t"
+      "ORG"
     ]
   },
   "pipeline":[
