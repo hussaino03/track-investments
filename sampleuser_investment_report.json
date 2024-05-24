@@ -155,21 +155,55 @@
             "type": "stock"
         },
         {
-            "type": "stock",
             "amount": {
                 "int": "900"
             },
-            "name": "AMD",
-            "ticker": "AMD",
-            "investment_date": "2024-05-23",
-            "initial_price": 152.38999938964844,
             "current_price": 160.42999267578125,
-            "number_of_shares": 5.6099235871614255,
-            "initial_value": 854.896252023504,
-            "total_value": 900.0,
             "gain_loss": 45.1,
+            "initial_price": 152.38999938964844,
+            "initial_value": 854.896252023504,
+            "investment_date": "2024-05-23",
+            "market_cap": "267.53 billion",
+            "name": "AMD",
+            "number_of_shares": 5.6099235871614255,
             "percentage_change": 5.01,
-            "market_cap": "267.53 billion"
+            "ticker": "AMD",
+            "total_value": 900.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "70"
+            },
+            "current_price": 55.0099983215332,
+            "gain_loss": -1.43,
+            "initial_price": 56.130001068115234,
+            "initial_value": 71.42519895751484,
+            "investment_date": "2024-05-23",
+            "market_cap": "99.56 billion",
+            "name": "TD",
+            "number_of_shares": 1.2724959486610108,
+            "percentage_change": -2.04,
+            "ticker": "TD",
+            "total_value": 70.0,
+            "type": "stock"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "450"
+            },
+            "name": "IBM",
+            "ticker": "IBM",
+            "investment_date": "2024-05-23",
+            "initial_price": 166.27000427246094,
+            "current_price": 170.6699981689453,
+            "number_of_shares": 2.636667280880541,
+            "initial_value": 438.3986800570655,
+            "total_value": 450.0,
+            "gain_loss": 11.6,
+            "percentage_change": 2.58,
+            "market_cap": "159.55 billion"
         }
     ]
 }
