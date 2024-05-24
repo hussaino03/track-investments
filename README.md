@@ -43,7 +43,7 @@ Schedule automated generation of investments report (updates on the current mark
 
 ✅ Allow users to update their existing investments
 
-Add net gain/loss to the graph displaying over time investment profits/loss
+✅ Add net gain/loss to the graph displaying over time investment profits/loss
 
 Milestones:
 
