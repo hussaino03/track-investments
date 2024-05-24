@@ -47,7 +47,7 @@ Add net gain/loss to the graph displaying over time investment profits/loss
 
 Milestones:
 
-![image](https://github.com/hussaino03/track-investments/assets/67332652/1edb1e2d-39d0-4b5b-8007-af436d3482b6)
+![image](https://github.com/hussaino03/track-investments/assets/67332652/72514d5d-bf1f-4aca-a694-07f588588a71)
 
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/0b79addd-3846-49dc-80d2-cb30102460d6)
 
