@@ -1,6 +1,6 @@
 import requests
 import yfinance as yf
-from datetime import datetime
+from datetime import datetime, timedelta
 import os, json
 
 def get_ticker(company_name):
@@ -41,7 +41,7 @@ def get_initial_stock_price(symbol, start_date, end_date):
         stock = yf.Ticker(symbol)
         historical_data = stock.history(start=start_date, end=end_date)
         if not historical_data.empty:
-            return historical_data['Close'].iloc[0]  # Return the initial stock price
+            return historical_data['Close'].iloc[0]  
         else:
             print(f"No data available for {symbol} within the specified date range.")
             return None
@@ -80,3 +80,35 @@ def format_market_cap(market_cap):
         return f"{market_cap / million:.2f} million"
     else:
         return str(market_cap)
+
+def get_sector(symbol):
+    """Fetch the sector of a company using Yahoo Finance."""
+    try:
+        stock = yf.Ticker(symbol)
+        sector = stock.info.get('sector')
+        return sector
+    except Exception as e:
+        print(f"Exception occurred while fetching sector for {symbol}: {e}")
+        return None
+
+import requests
+
+def get_stocks_per_sector(sector, num_stocks=5):
+    """Fetch the current price of stocks within a given sector."""
+    api_key = os.environ.get("FINANCE_MODELLING")
+    url = f"https://financialmodelingprep.com/api/v3/stock-screener?sector={sector}&limit={num_stocks}&apikey={api_key}"
+    response = requests.get(url)
+    data = response.json()
+
+    stock_prices = {}
+    for company in data:
+        symbol = company['symbol']
+        stock = yf.Ticker(symbol)
+        hist = stock.history(period="1d")
+        if not hist.empty:
+            current_price = hist.iloc[-1]['Close']
+            stock_prices[symbol] = current_price
+
+    sorted_stocks = sorted(stock_prices.items(), key=lambda x: x[1], reverse=True)
+    return sorted_stocks[:num_stocks]
+
