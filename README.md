@@ -1,4 +1,4 @@
-## First Phase
+## First Phase 🤖
 
 ✅ Train the LLM model & parse the user input into (category, amount). 
 
@@ -14,7 +14,7 @@ Milestones:
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/5a1549da-ee7b-45ef-a5d3-3707fe9c3767)
 
 
-## Second Phase
+## Second Phase 📈
 
 ✅ Process the user investment data and mock it into a JSON summary report.
 
@@ -33,7 +33,7 @@ Milestones:
 
 
 
-## Third Phase 
+## Third Phase 📊
 
 ✅ Investment recommendations based on the user's portfolio and current market trends.
 
