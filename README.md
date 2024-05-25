@@ -2,7 +2,7 @@
 
 ✅ Train the LLM model & parse the user input into (category, amount). 
 
-✅ Create a Firebase database and populate it with users.
+✅ Create a Firebase database and populate it with users, with auth layer
 
 ✅ Allow multiple investments.
 
