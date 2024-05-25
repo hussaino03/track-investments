@@ -7,6 +7,38 @@ from firebase_admin import credentials, auth, db
 from db.db import create_user, add_investment_to_user, get_user_investments, save_report_to_db, get_report_from_db, get_chart_from_db, save_chart_to_db
 from graph.graph import plot_bar_chart, decode_base64_to_image, encode_image_to_base64
 
+def analyze_portfolio(investments):
+    """Analyze the user's portfolio to determine distribution by sector."""
+    sector_distribution = {}
+    for investment in investments:
+        sector = api.get_sector(investment['ticker'])
+        if sector:
+            if sector in sector_distribution:
+                sector_distribution[sector] += investment['total_value']
+            else:
+                sector_distribution[sector] = investment['total_value']
+    return sector_distribution
+
+
+def get_investment_recommendations(portfolio_stats):
+    """Generate investment recommendations based on portfolio distribution and market trends."""
+    recommendations = {}
+
+    try:
+        if isinstance(portfolio_stats, dict):
+            most_invested_sector = max(portfolio_stats, key=portfolio_stats.get)
+            recommendations["most_invested_sector"] = most_invested_sector
+
+            top_stocks = api.get_stocks_per_sector(most_invested_sector)
+            recommendations["top_stocks_for_this_sector"] = top_stocks
+        else:
+            raise ValueError("Incorrect parsing")
+    except Exception as e:
+        print(f"Error in generating investment recommendations: {e}")
+
+    return recommendations
+
+
 def main():
     investment_data, existing_data = [], []
     username = input("What's your name? ")
@@ -124,6 +156,16 @@ def main():
         "username": username,
         "investments": investment_data
     }
+
+    portfolio_distribution = analyze_portfolio(investment_data)
+    recommendations = get_investment_recommendations(portfolio_distribution)
+
+    stats_report = {
+        "distribution": portfolio_distribution,
+        "recommendations": recommendations
+    }
+
+    user_report["Stats"] = stats_report
 
     file_name = f"{username}_investment_report.json"
 

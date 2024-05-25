@@ -340,6 +340,59 @@
             "ticker": "BRBR",
             "total_value": 499.99999999999994,
             "type": "stock"
+        },
+        {
+            "type": "stock",
+            "amount": {
+                "int": "900"
+            },
+            "name": "Roblox",
+            "ticker": "RBLX",
+            "investment_date": "2024-05-25",
+            "initial_price": 30.959999084472656,
+            "current_price": 32.66999816894531,
+            "number_of_shares": 27.548210910385084,
+            "initial_value": 852.8925845643819,
+            "total_value": 900.0,
+            "gain_loss": 47.11,
+            "percentage_change": 5.23,
+            "market_cap": "20.91 billion"
         }
-    ]
+    ],
+    "Stats": {
+        "distribution": {
+            "Communication Services": 2356.0,
+            "Technology": 3879.0,
+            "Financial Services": 526.0,
+            "Consumer Cyclical": 789.0,
+            "Healthcare": 400.0,
+            "Industrials": 988.0,
+            "Consumer Defensive": 499.99999999999994
+        },
+        "recommendations": {
+            "most_invested_sector": "Technology",
+            "top_stocks_for_this_sector": [
+                [
+                    "AVGO",
+                    1407.8399658203125
+                ],
+                [
+                    "NVDA",
+                    1064.68994140625
+                ],
+                [
+                    "MSFT",
+                    430.1600036621094
+                ],
+                [
+                    "AAPL",
+                    189.97999572753906
+                ],
+                [
+                    "TSM",
+                    160.0
+                ]
+            ]
+        }
+    }
 }
