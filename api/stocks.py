@@ -91,8 +91,6 @@ def get_sector(symbol):
         print(f"Exception occurred while fetching sector for {symbol}: {e}")
         return None
 
-import requests
-
 def get_stocks_per_sector(sector, num_stocks=5):
     """Fetch the current price of stocks within a given sector."""
     api_key = os.environ.get("FINANCE_MODELLING")
