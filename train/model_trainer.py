@@ -84,7 +84,6 @@ def train_model(train_data, valid_data, model_path=None, n_iter=40):
         print(f"Saved model to {model_path}")
 
     # Evaluate on validation set
-    # Evaluate on validation set
     correct_ents = 0
     total_ents = 0
     for text, annot in valid_data:
