@@ -45,7 +45,7 @@ Milestones:
 
 Milestones:
 
-![image](https://github.com/hussaino03/track-investments/assets/67332652/0cb1a4d4-da29-467a-8f98-f6e7479906be)
+![image](https://github.com/hussaino03/track-investments/assets/67332652/f4a4f1b3-3e17-4018-937e-bb2cdefce47d)
 
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/0b79addd-3846-49dc-80d2-cb30102460d6)
 
