@@ -35,9 +35,7 @@ Milestones:
 
 ## Third Phase 
 
-Investment recommendations based on the user's portfolio and current market trends.
-
-Schedule automated generation of investments report (updates on the current market, losses/gains from current investments) and send via email.
+✅ Investment recommendations based on the user's portfolio and current market trends.
 
 ✅ Create data visualizations (graphs, charts) for investment performance over time.
 
@@ -51,5 +49,6 @@ Milestones:
 
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/0b79addd-3846-49dc-80d2-cb30102460d6)
 
+![image](https://github.com/hussaino03/track-investments/assets/67332652/fe8104fc-c8e9-429f-a51f-0baf0c00a718)
 
 
