@@ -11,43 +11,48 @@ def main():
     investment_data, existing_data = [], []
     username = input("What's your name? ")
     is_returning_user = input("Are you a returning user? (y/n): ").lower()
+    
     if is_returning_user == 'y':
-        email = input("Enter email: ")
-        try:
-            user = auth.get_user_by_email(email)
-            uid = user.uid
-            report = get_report_from_db(uid)
-            if report:
-                print("User Investment Report:")
-                print(json.dumps(report, indent=4))
+        while True:
+            email = input("Enter email: ")
+            try:
+                user = auth.get_user_by_email(email)
+                uid = user.uid
+                report = get_report_from_db(uid)
+                if report:
+                    print("User Investment Report:")
+                    print(json.dumps(report, indent=4))
 
-                encoded_chart = get_chart_from_db(uid)
+                    encoded_chart = get_chart_from_db(uid)
 
-                if isinstance(report, dict):
-                    existing_data = report.get("investments", [])
+                    if isinstance(report, dict):
+                        existing_data = report.get("investments", [])
+                    else:
+                        existing_data = []
+
+                    if encoded_chart:
+                        decode_base64_to_image(encoded_chart, 'graph/investment_distribution.png')
+                        print("Investment distribution chart saved to graph/investment_distribution.png")
+                    else:
+                        print("No investment distribution chart found for this user.")
                 else:
-                    existing_data = []
-
-                if encoded_chart:
-                    decode_base64_to_image(encoded_chart, 'graph/investment_distribution.png')
-                    print("Investment distribution chart saved to graph/investment_distribution.png")
-                else:
-                    print("No investment distribution chart found for this user.")
-
-            else:
-                print("No report found for this user.")
-        except auth.UserNotFoundError:
-            print("No user found with this email. Please register as a new user.")
-            return
+                    print("No report found for this user.")
+                break
+            except auth.UserNotFoundError:
+                print("No user found with this email. Please try again.")
+            except ValueError as e:
+                print(e)
+                print("Please enter a valid email address.")
     else:
-        email = input("Enter email: ")
-        password = input("Enter password: ")
-
-        uid = create_user(email, password)
-
-        if not uid:
-            print("Could not create user. Exiting.")
-            return
+        while True:
+            email = input("Enter email: ")
+            password = input("Enter password: ")
+            try:
+                uid = create_user(email, password)
+                break
+            except ValueError as e:
+                print(e)
+                print("Please enter a valid email and a password that is at least 6 characters long.")
 
     print(f"Hello {username}, let's add your investment details. You can type 'exit' or 'quit' to finish at any time.")
     investment_date = datetime.datetime.now().strftime('%Y-%m-%d')
