@@ -240,89 +240,106 @@
             "type": "stock"
         },
         {
-            "type": "stock",
             "amount": {
                 "int": "700"
             },
-            "name": "Meta",
-            "ticker": "META",
-            "investment_date": "2024-05-24",
-            "initial_price": 476.20001220703125,
             "current_price": 478.2200012207031,
-            "number_of_shares": 1.4637614449692231,
-            "initial_value": 697.0432179625258,
-            "total_value": 700.0,
             "gain_loss": 2.96,
+            "initial_price": 476.20001220703125,
+            "initial_value": 697.0432179625258,
+            "investment_date": "2024-05-24",
+            "market_cap": "1.21 trillion",
+            "name": "Meta",
+            "number_of_shares": 1.4637614449692231,
             "percentage_change": 0.42,
-            "market_cap": "1.21 trillion"
+            "ticker": "META",
+            "total_value": 700.0,
+            "type": "stock"
         },
         {
-            "type": "stock",
             "amount": {
                 "int": "50"
             },
-            "name": "Oracle",
-            "ticker": "ORCL",
-            "investment_date": "2024-05-24",
-            "initial_price": 116.66999816894531,
             "current_price": 122.91000366210938,
-            "number_of_shares": 0.4068017127186367,
-            "initial_value": 47.46155507800716,
-            "total_value": 50.0,
             "gain_loss": 2.54,
+            "initial_price": 116.66999816894531,
+            "initial_value": 47.46155507800716,
+            "investment_date": "2024-05-24",
+            "market_cap": "337.82 billion",
+            "name": "Oracle",
+            "number_of_shares": 0.4068017127186367,
             "percentage_change": 5.08,
-            "market_cap": "337.82 billion"
+            "ticker": "ORCL",
+            "total_value": 50.0,
+            "type": "stock"
         },
         {
-            "type": "stock",
             "amount": {
                 "int": "250"
             },
-            "name": "Samsung",
-            "ticker": "005930.KS",
-            "investment_date": "2024-05-24",
-            "initial_price": 79200.0,
             "current_price": 75900.0,
-            "number_of_shares": 0.0032938076416337285,
-            "initial_value": 260.8695652173913,
-            "total_value": 250.0,
             "gain_loss": -10.87,
+            "initial_price": 79200.0,
+            "initial_value": 260.8695652173913,
+            "investment_date": "2024-05-24",
+            "market_cap": "504.21 trillion",
+            "name": "Samsung",
+            "number_of_shares": 0.0032938076416337285,
             "percentage_change": -4.35,
-            "market_cap": "504.21 trillion"
+            "ticker": "005930.KS",
+            "total_value": 250.0,
+            "type": "stock"
         },
         {
-            "type": "stock",
             "amount": {
                 "int": "1000"
             },
-            "name": "Cisco",
-            "ticker": "CSCO",
-            "investment_date": "2024-05-24",
-            "initial_price": 48.060001373291016,
             "current_price": 46.41999816894531,
-            "number_of_shares": 21.54243945379976,
-            "initial_value": 1035.329669733655,
-            "total_value": 1000.0,
             "gain_loss": -35.33,
+            "initial_price": 48.060001373291016,
+            "initial_value": 1035.329669733655,
+            "investment_date": "2024-05-24",
+            "market_cap": "187.02 billion",
+            "name": "Cisco",
+            "number_of_shares": 21.54243945379976,
             "percentage_change": -3.53,
-            "market_cap": "187.02 billion"
+            "ticker": "CSCO",
+            "total_value": 1000.0,
+            "type": "stock"
         },
         {
-            "type": "stock",
             "amount": {
                 "int": "988"
             },
-            "name": "RBC",
-            "ticker": "RBC",
-            "investment_date": "2024-05-24",
-            "initial_price": 271.55999755859375,
             "current_price": 291.5199890136719,
-            "number_of_shares": 3.3891329487998307,
-            "initial_value": 920.3529353018316,
-            "total_value": 988.0,
             "gain_loss": 67.65,
+            "initial_price": 271.55999755859375,
+            "initial_value": 920.3529353018316,
+            "investment_date": "2024-05-24",
+            "market_cap": "8.52 billion",
+            "name": "RBC",
+            "number_of_shares": 3.3891329487998307,
             "percentage_change": 6.85,
-            "market_cap": "8.52 billion"
+            "ticker": "RBC",
+            "total_value": 988.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "500"
+            },
+            "current_price": 58.36000061035156,
+            "gain_loss": -12.59,
+            "initial_price": 59.83000183105469,
+            "initial_value": 512.5942529586127,
+            "investment_date": "2024-05-24",
+            "market_cap": "7.61 billion",
+            "name": "Bell",
+            "number_of_shares": 8.567511904914422,
+            "percentage_change": -2.52,
+            "ticker": "BRBR",
+            "total_value": 499.99999999999994,
+            "type": "stock"
         }
     ]
 }
