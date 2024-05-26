@@ -53,4 +53,4 @@ Milestones:
 
 ## Fourth Phase 💻
 
-Add a user interface to integrate all the different components 
+Incorporate real-time alerts, notifying the users when the price of a stock reaches a certain threshold
