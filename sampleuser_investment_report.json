@@ -342,27 +342,79 @@
             "type": "stock"
         },
         {
-            "type": "stock",
             "amount": {
                 "int": "900"
             },
-            "name": "Roblox",
-            "ticker": "RBLX",
-            "investment_date": "2024-05-25",
-            "initial_price": 30.959999084472656,
             "current_price": 32.66999816894531,
-            "number_of_shares": 27.548210910385084,
-            "initial_value": 852.8925845643819,
-            "total_value": 900.0,
             "gain_loss": 47.11,
+            "initial_price": 30.959999084472656,
+            "initial_value": 852.8925845643819,
+            "investment_date": "2024-05-25",
+            "market_cap": "20.91 billion",
+            "name": "Roblox",
+            "number_of_shares": 27.548210910385084,
             "percentage_change": 5.23,
-            "market_cap": "20.91 billion"
+            "ticker": "RBLX",
+            "total_value": 900.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "45"
+            },
+            "current_price": 30.719999313354492,
+            "gain_loss": 0.31,
+            "initial_price": 30.510000228881836,
+            "initial_value": 44.692384146728756,
+            "investment_date": "2024-05-25",
+            "market_cap": "130.77 billion",
+            "name": "Intel",
+            "number_of_shares": 1.46484378274181,
+            "percentage_change": 0.69,
+            "ticker": "INTC",
+            "total_value": 45.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "500"
+            },
+            "current_price": 195.3800048828125,
+            "gain_loss": 19.9,
+            "initial_price": 187.60574340820312,
+            "initial_value": 480.104766914935,
+            "investment_date": "2024-05-26",
+            "market_cap": "228.05 billion",
+            "name": "SAP",
+            "number_of_shares": 2.5591155057033412,
+            "percentage_change": 3.98,
+            "ticker": "SAP",
+            "total_value": 500.0,
+            "type": "stock"
+        },
+        {
+            "amount": {
+                "int": "23"
+            },
+            "current_price": 22.889999389648438,
+            "gain_loss": -0.9,
+            "initial_price": 23.790000915527344,
+            "initial_value": 23.90432659009052,
+            "investment_date": "2024-05-26",
+            "market_cap": "7.36 billion",
+            "name": "Dropbox",
+            "number_of_shares": 1.0048056187542456,
+            "percentage_change": -3.91,
+            "ticker": "DBX",
+            "total_value": 23.0,
+            "type": "stock"
         }
     ],
+    "stock_alerts": "off",
     "Stats": {
         "distribution": {
             "Communication Services": 2356.0,
-            "Technology": 3879.0,
+            "Technology": 4447.0,
             "Financial Services": 526.0,
             "Consumer Cyclical": 789.0,
             "Healthcare": 400.0,
