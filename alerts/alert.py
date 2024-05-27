@@ -4,6 +4,9 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os, sys
 from firebase_admin import credentials, auth, db, exceptions
+from dotenv import load_dotenv
+
+load_dotenv()
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db import get_user_investments, get_user_price_alerts, get_user_by_uid, update_user_price_alerts
@@ -16,8 +19,8 @@ def send_email_alert(uid, symbol, current_price, threshold_price):
         print(f"No email found for user {uid}")
         return
 
-    sender_email = 'h0498221@@gmail.com'
-    sender_password = 'atsg xbjv acuh mvvt'
+    sender_email = os.getenv("APP_EMAIL")
+    sender_password = os.getenv("APP_PASS")
 
     subject = f"Stock Price Alert for {symbol}"
     body = f"The price of {symbol} has reached ${current_price}, which is above your threshold of ${threshold_price}."
