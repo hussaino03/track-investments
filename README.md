@@ -53,7 +53,7 @@ Milestones:
 
 ## Fourth Phase 💻
 
-Incorporate real-time alerts, notifying the users when the price of a stock reaches a certain threshold
+✅ Incorporate real-time alerts, notifying the users when the price of a stock reaches a certain threshold
 
 Milestones:
 
