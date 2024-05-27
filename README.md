@@ -57,10 +57,17 @@ Milestones:
 
 Send alerts every 24hrs 
 
+Incorporate user investment report along with the alerts to show current summary in email
+
 Milestones:
 
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/f46d450d-d366-4d6e-812f-1555c3f4de27)
 
-![image](https://github.com/hussaino03/track-investments/assets/67332652/3a5474bc-e301-4736-9bc5-6177f4358f33)
+![image](https://github.com/hussaino03/track-investments/assets/67332652/a9cda311-7a4e-4825-a0ee-602e3afb2e4e)
+
+![image](https://github.com/hussaino03/track-investments/assets/67332652/ff08be55-2334-460d-8931-5656c56fc955)
+
+
+
 
 
