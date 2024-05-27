@@ -54,15 +54,27 @@ def check_stock_prices(uid):
         return
     
     price_alerts = get_user_price_alerts(uid) or {}
-    for symbol, thresholds in price_alerts.items():
-        current_price = yf.Ticker(symbol).history(period='1d')['Close'].iloc[0]
-        
-        for alert_id, alert_data in thresholds.items():
-            threshold_price = alert_data
-            
-            if current_price >= threshold_price:
-                send_email_alert(uid, symbol, current_price, threshold_price)
-                update_user_price_alerts(uid, symbol, threshold_price)
+    if not price_alerts:
+        print(f"No price alerts found for user with UID {uid}.")
+        return
 
-if __name__ == "__main__":
-    check_stock_prices()
+    for symbol, thresholds in price_alerts.items():
+        try:
+            stock = yf.Ticker(symbol)
+            hist = stock.history(period='1d')
+            if hist.empty:
+                print(f"No historical data found for {symbol}.")
+                continue
+            
+            current_price = hist['Close'].iloc[0]
+
+            processed_thresholds = set()
+
+            for alert_id, threshold_price in thresholds.items():
+                if current_price >= threshold_price and threshold_price not in processed_thresholds:
+                    send_email_alert(uid, symbol, current_price, threshold_price)
+                    processed_thresholds.add(threshold_price)
+                    db.reference(f'/users/{uid}/price_alerts/{symbol}/{alert_id}').delete()
+        except Exception as e:
+            print(f"Error checking price for {symbol}: {e}")
+
