@@ -55,6 +55,8 @@ Milestones:
 
 ✅ Incorporate real-time alerts, notifying the users when the price of a stock reaches a certain threshold
 
+Send alerts every 24hrs 
+
 Milestones:
 
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/f46d450d-d366-4d6e-812f-1555c3f4de27)
