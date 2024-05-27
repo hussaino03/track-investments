@@ -1,7 +1,11 @@
 import requests
 import yfinance as yf
 from datetime import datetime, timedelta
-import os, json
+import os
+import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def get_ticker(company_name):
     """Fetch information about a company using Yahoo Finance search."""
@@ -27,7 +31,7 @@ def get_stock_price(symbol):
         stock = yf.Ticker(symbol)
         todays_data = stock.history(period='1d')
         if not todays_data.empty:
-            return todays_data['Close'][0]
+            return todays_data['Close'].iloc[0]
         else:
             print(f"Error fetching stock price for {symbol}")
             return None
@@ -93,7 +97,7 @@ def get_sector(symbol):
 
 def get_stocks_per_sector(sector, num_stocks=5):
     """Fetch the current price of stocks within a given sector."""
-    api_key = os.environ.get("FINANCE_MODELLING")
+    api_key = os.getenv("FINANCE_MODELLING")
     url = f"https://financialmodelingprep.com/api/v3/stock-screener?sector={sector}&limit={num_stocks}&apikey={api_key}"
     response = requests.get(url)
     data = response.json()
@@ -104,9 +108,8 @@ def get_stocks_per_sector(sector, num_stocks=5):
         stock = yf.Ticker(symbol)
         hist = stock.history(period="1d")
         if not hist.empty:
-            current_price = hist.iloc[-1]['Close']
+            current_price = hist['Close'].iloc[-1]
             stock_prices[symbol] = current_price
 
     sorted_stocks = sorted(stock_prices.items(), key=lambda x: x[1], reverse=True)
     return sorted_stocks[:num_stocks]
-

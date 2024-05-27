@@ -4,8 +4,9 @@ import os
 from parser import parser as p
 from api import stocks as api
 from firebase_admin import credentials, auth, db
-from db.db import create_user, add_investment_to_user, get_user_investments, save_report_to_db, get_report_from_db, get_chart_from_db, save_chart_to_db
+from db.db import create_user, clear_user_price_alerts, get_user_investments, save_report_to_db, get_report_from_db, get_chart_from_db, save_chart_to_db
 from graph.graph import plot_bar_chart, decode_base64_to_image, encode_image_to_base64
+from alerts.alert import update_user_price_alerts, check_stock_prices
 
 def analyze_portfolio(investments):
     """Analyze the user's portfolio to determine distribution by sector."""
@@ -108,6 +109,10 @@ def main():
         print(f"  Entities: {investment_info['entities']}")
         print(f"  Amount: {investment_info['amount']}")
     
+    subscribe_to_alerts = input("Do you want to subscribe to stock alerts for your investments? (y/n): ").lower()
+    skip_all = False
+    alerts_set = False
+
     data = []
     for investment in investment_data:
         for entity in investment["entities"]:
@@ -142,11 +147,30 @@ def main():
                                 "market_cap": formatted_market_cap
                             }
                             data.append(investment_entry)
+
+                            if subscribe_to_alerts == 'y' and not skip_all:
+                                while True:
+                                    set_alert = input(f"Do you want to set up a price alert for {symbol}? (y/n/s to skip all): ").lower()
+                                    if set_alert in ['y', 'n', 's']:
+                                        break
+                                    print("Invalid input. Please enter 'y' for yes, 'n' for no, or 's' to skip all.")
+
+                                if set_alert == 'y':
+                                    threshold_price = float(input(f"Enter the price threshold for {symbol}: "))
+                                    update_user_price_alerts(uid, symbol, threshold_price)
+                                    alerts_set = True
+                                elif set_alert == 's':
+                                    print("Skipping price alert setup for all remaining investments.")
+                                    skip_all = True
                         else:
                             print(f"Could not fetch the price for {entity[0]} ({symbol})")
                 else:
                     print(f"Could not find stock symbol for {entity[0]}")
 
+    if subscribe_to_alerts != 'y':
+        clear_user_price_alerts(uid)
+        print("Any existing price alerts have been cleared")
+    
     if len(existing_data) != 0:
         investment_data = existing_data + data
     else:
@@ -154,7 +178,8 @@ def main():
 
     user_report = {
         "username": username,
-        "investments": investment_data
+        "investments": investment_data,
+        "stock_alerts": "on" if alerts_set else "off"
     }
 
     portfolio_distribution = analyze_portfolio(investment_data)
@@ -183,6 +208,8 @@ def main():
     print(user_report)
     save_report_to_db(uid, user_report)
     save_chart_to_db(uid, encoded_chart)
+
+    check_stock_prices(uid)
 
 if __name__ == "__main__":
     main()
