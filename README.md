@@ -32,7 +32,6 @@ Milestones:
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/ec0753ba-87ff-48e7-8e59-8d8faad66cf6)
 
 
-
 ## Third Phase 📊
 
 ✅ Investment recommendations based on the user's portfolio and current market trends.
@@ -52,3 +51,6 @@ Milestones:
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/fe8104fc-c8e9-429f-a51f-0baf0c00a718)
 
 
+## Fourth Phase 💻
+
+Incorporate real-time alerts, notifying the users when the price of a stock reaches a certain threshold
