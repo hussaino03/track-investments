@@ -68,6 +68,18 @@ def update_user_price_alerts(uid, symbol, threshold):
     ref.push(threshold)
     print(f'\nUpdated price alert for {uid}, {symbol}, {threshold}')
 
+def update_user_email(uid, new_email):
+    try:
+        user = auth.update_user(
+            uid,
+            email=new_email,
+        )
+        print(f'Successfully updated user: {user.uid}')
+        return user
+    except exceptions.FirebaseError as e:
+        print(f'Error updating user: {e}')
+        return None
+
 def clear_user_price_alerts(uid):
     ref = db.reference(f'/users/{uid}/price_alerts')
     ref.delete()
