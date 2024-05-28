@@ -55,7 +55,7 @@ Milestones:
 
 ✅ Incorporate real-time alerts, notifying the users when the price of a stock reaches a certain threshold
 
-Send alerts every 24hrs 
+Send alerts every 24hrs, or whatever timeframe the user chooses
 
 Incorporate user investment report along with the alerts to show current summary in email
 
@@ -68,6 +68,14 @@ Milestones:
 ![image](https://github.com/hussaino03/track-investments/assets/67332652/ff08be55-2334-460d-8931-5656c56fc955)
 
 
+## Fifth Phase 🔎
+
+Predict future prices based on current user investments 
+
+
+## Sixth Phase 🌐
+
+Implement UI 
 
 
 
